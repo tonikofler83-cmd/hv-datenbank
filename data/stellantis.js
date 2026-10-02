@@ -17,9 +17,10 @@ const medAwd = (name, range) => ({ name, net: 73, chem: "NMC", cellMaker: "ACC",
 const phev = (name, range, net) => ({ name, net: net || 17.9, chem: "NMC", range, layout: "FWD", kw: 92, motor: "PSM", ice: "1.6 Turbo-Benziner, 110 kW", sysKw: 143, gearbox: "7-Gang-DKG e-DCS7", ac: 7.4 });
 
 EVDB.brand({ id: "peugeot", name: "Peugeot", country: "Frankreich", group: "Stellantis", warranty: W, models: [
-  { name: "E-208", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2019, arch: "400 V", notes: ECMP, variants: [ecmp50("100 kW (50 kWh)", 362), ecmp("115 kW (54 kWh)", 410)] },
+  { name: "E-208 / E-208 GTi", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2019, arch: "400 V", notes: ECMP + " E-208 GTi (ab September 2026) mit mechanischem Sperrdifferenzial. Nachfolger auf STLA Small angekündigt (Produktionsstart Ende 2026).", variants: [ecmp50("100 kW (50 kWh)", 362), ecmp("115 kW (54 kWh)", 410), ecmpHot("GTi 207 kW", 374)] },
   { name: "E-2008", type: "BEV", seg: "Kleinwagen-SUV", platform: "e-CMP", since: 2020, arch: "400 V", notes: ECMP, variants: [ecmp("115 kW (54 kWh)", 406)] },
-  { name: "E-308 / E-308 SW", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", variants: [ecmp("115 kW (54 kWh)", 416)] },
+  { name: "E-308 / E-308 SW", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", notes: "Seit dem Facelift (Modelljahr 2026) 58,3 statt 51 kWh nutzbar, Vehicle-to-Load.",
+    variants: [{ name: "115 kW (58 kWh)", net: 58.3, chem: "NMC", range: 450, layout: "FWD", kw: 115, nm: 270, motor: "PSM", ac: 11, dc: 100 }] },
   { name: "E-408", type: "BEV", seg: "Mittelklasse-Fastback", platform: "EMP2 V3", since: 2024, arch: "400 V",
     variants: [{ name: "157 kW (58 kWh)", net: 58.2, chem: "NMC", range: 453, layout: "FWD", kw: 157, nm: 345, motor: "PSM", ac: 11, dc: 120 }] },
   { name: "E-3008 / E-5008", type: "BEV", seg: "Kompakt-SUV / 7-Sitzer", platform: "STLA Medium", since: 2024, arch: "400 V", notes: MEDIUM,
@@ -59,9 +60,10 @@ EVDB.brand({ id: "ds", name: "DS Automobiles", country: "Frankreich", group: "St
 ] });
 
 EVDB.brand({ id: "opel", name: "Opel", country: "Deutschland", group: "Stellantis", warranty: W, models: [
-  { name: "Corsa Electric", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2019, arch: "400 V", notes: ECMP, variants: [ecmp50("100 kW (50 kWh)", 357), ecmp("115 kW (54 kWh)", 405)] },
+  { name: "Corsa Electric / Corsa GSE", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2019, arch: "400 V", notes: ECMP + " Corsa GSE seit September 2026 bestellbar.", variants: [ecmp50("100 kW (50 kWh)", 357), ecmp("115 kW (54 kWh)", 405), ecmpHot("GSE 207 kW", 374)] },
   { name: "Mokka Electric / Mokka GSE", type: "BEV", seg: "Kleinwagen-SUV", platform: "e-CMP", since: 2020, arch: "400 V", notes: ECMP, variants: [ecmp("115 kW (54 kWh)", 403), ecmpHot("GSE 207 kW", 336)] },
-  { name: "Astra Electric / Sports Tourer Electric", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", variants: [ecmp("115 kW (54 kWh)", 418)] },
+  { name: "Astra Electric / Sports Tourer Electric", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", notes: "Seit dem Facelift 2026 Batterie mit 58 statt 54 kWh, Vehicle-to-Load.",
+    variants: [{ name: "115 kW (58 kWh)", chem: "NMC", range: 454, cons: 15.3, layout: "FWD", kw: 115, motor: "PSM", ac: 11, dc: 100, t: 32 }] },
   { name: "Frontera Electric", type: "BEV", seg: "Kleinwagen-SUV", platform: "Smart Car", since: 2024, arch: "400 V", notes: SMALL,
     variants: [smart("83 kW (44 kWh)", 305), { name: "Extended Range (54 kWh)", net: 54, chem: "LFP", range: 408, layout: "FWD", kw: 83, motor: "PSM", ac: 7.4, dc: 100 }] },
   { name: "Grandland Electric", type: "BEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2024, arch: "400 V", notes: MEDIUM + " Gebaut in Eisenach.",
@@ -103,13 +105,14 @@ EVDB.brand({ id: "alfa-romeo", name: "Alfa Romeo", country: "Italien", group: "S
 
 EVDB.brand({ id: "lancia", name: "Lancia", country: "Italien", group: "Stellantis", warranty: W, models: [
   { name: "Ypsilon Elettrica / Ypsilon HF", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2024, arch: "400 V", notes: ECMP, variants: [ecmp("Elettrica 115 kW", 403), ecmpHot("HF 207 kW", 370)] },
-  { name: "Gamma", type: "BEV", seg: "Mittelklasse-Fastback", platform: "STLA Medium", since: 2026, status: "planned", arch: "400 V", notes: "Angekündigt für 2026, Fertigung in Melfi; als BEV und Hybrid.", variants: [] }
+  { name: "Gamma", type: "BEV", seg: "Mittelklasse-Fastback", platform: "STLA Medium", since: 2026, status: "planned", arch: "400 V", notes: "Am 16.09.2026 in Rom vorgestellt, Messepremiere auf dem Pariser Autosalon (Oktober 2026); Fertigung in Melfi, als BEV und Hybrid. Angekündigte Batterien: 73,7 kWh und 97,2 kWh (NMC, 400 V), Frontantrieb oder Allrad. Bestellstart noch offen, Deutschland-Start zunächst nicht vorgesehen.", variants: [] }
 ] });
 
 EVDB.brand({ id: "jeep", name: "Jeep", country: "USA", group: "Stellantis", warranty: W, models: [
   { name: "Avenger Elektro", type: "BEV", seg: "Kleinwagen-SUV", platform: "e-CMP", since: 2023, arch: "400 V", notes: ECMP + " Gebaut in Tychy (Polen).", variants: [ecmp("115 kW (54 kWh)", 400)] },
   { name: "Compass (3. Generation)", type: "BEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2025, arch: "400 V", notes: MEDIUM + " Gebaut in Melfi.",
-    variants: [med73("157 kW (73 kWh)", 500), med97("Long Range 170 kW (97 kWh)", 650), { name: "4xe 276 kW (AWD)", net: 97, chem: "NMC", cellMaker: "ACC", range: 600, layout: "AWD", kw: 276, motor: "PSM", ac: 11, dc: 160 }] },
+    variants: [Object.assign(med73("157 kW (74 kWh)", 500), { net: 73.7 }), Object.assign(med97("Long Range 170 kW (96 kWh)", 674), { net: 96.3 }),
+               { name: "4xe 276 kW (AWD)", net: 96.1, gross: 103, chem: "NMC", cellMaker: "ACC", range: 606, cons: 19.5, layout: "AWD", kw: 276, motor: "PSM", ac: 11, dc: 160 }] },
   { name: "Compass Plug-in-Hybrid", type: "PHEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2025, arch: "400 V", hybrid: PHEV_NEW, variants: [phev("Plug-in-Hybrid 195", 85)] },
   { name: "Wrangler 4xe / Grand Cherokee 4xe", type: "PHEV", seg: "Geländewagen / SUV", since: 2021, arch: "400 V",
     hybrid: "parallel (P2 im 8-Gang-Automatikgetriebe) plus Riemenstartergenerator (P0); mechanischer Allrad mit Untersetzung",
@@ -143,6 +146,15 @@ EVDB.brand({ id: "leapmotor", name: "Leapmotor", country: "China", group: "Leapm
   { name: "C10 REEV", type: "REEV", seg: "Mittelklasse-SUV", platform: "LEAP 3.0", since: 2025, arch: "400 V",
     hybrid: "seriell: 1,5-l-Benziner arbeitet ausschließlich als Generator, Antrieb rein elektrisch über die Hinterachse",
     variants: [{ name: "REEV", net: 28.4, chem: "LFP", range: 145, layout: "RWD", kw: 158, nm: 320, motor: "PSM", ice: "1.5 Vierzylinder-Sauger (Generator, ca. 50 kW elektrisch)", ac: 6.6, dc: 65 }] },
-  { name: "B05", type: "BEV", seg: "Kompaktklasse", platform: "LEAP 3.5", since: 2026, status: "planned", arch: "400 V", notes: "Kompakter Fünftürer, Europa-Start 2026 angekündigt.", variants: [] }
+  { name: "B10 Hybrid EV", type: "REEV", seg: "Kompakt-SUV", platform: "LEAP 3.5", since: 2026, arch: "400 V",
+    hybrid: "seriell: 1,5-l-Benziner arbeitet ausschließlich als Generator (50 kW), Antrieb rein elektrisch über die Hinterachse",
+    notes: "Seit Ende April 2026 bestellbar. Batterie 18,8 kWh, Gesamtreichweite bis 900 km; DC-Laden 30–80 % in 30 min.",
+    variants: [{ name: "Hybrid EV (18,8 kWh)", range: 86, layout: "RWD", kw: 160, nm: 240, ice: "1.5 Benziner (Generator, 50 kW)", ac: 6.6, dc: 46 }] },
+  { name: "B05", type: "BEV", seg: "Kompaktklasse", platform: "LEAP 3.5", since: 2026, arch: "400 V", notes: "Kompakter Fünftürer (4,43 m), in Europa seit Ende April 2026 bestellbar.",
+    d: { kw: 160, nm: 240 },
+    variants: [{ name: "Pro (56,2 kWh)", net: 56.2, range: 401 }, { name: "ProMax (67,1 kWh)", net: 67.1, range: 482 }] },
+  { name: "B03X", type: "BEV", seg: "Kleinwagen-SUV", since: 2026, arch: "400 V", notes: "Seit 01.07.2026 bestellbar. Batterie als tragendes Strukturteil („Cell-to-Chassis 2.0 Plus“). DC-Laden 30–80 % in 16 bzw. 17 min.",
+    d: { chem: "LFP", pack: "Cell-to-Chassis", layout: "FWD", ac: 11 },
+    variants: [{ name: "Life (39,8 kWh)", range: 292 }, { name: "Design (53,0 kWh)", range: 382, kw: 145, dc: 133 }] }
 ] });
 })();

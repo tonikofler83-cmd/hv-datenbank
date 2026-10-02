@@ -20,7 +20,62 @@ Pro Wochenlauf wird die nächste Datei dieser Liste vollständig gegen Herstelle
 12. china-weitere.js
 13. sonstige-exoten.js
 
-Zuletzt geprüft: vw-konzern.js am 02.10.2026 – nur teilweise (Elektromodelle VW/Audi/Škoda/Cupra, Porsche Cayenne Electric); offen geblieben: Plug-in-Hybride, Porsche Taycan/Macan/Hybride, Bentley, Lamborghini, ID.7, ID. Buzz (nächste: bmw-group.js)
+Zuletzt geprüft: bmw-group.js, mercedes.js und stellantis.js am 02.10.2026 (Lauf 2) – jeweils nur teilweise, Einzelheiten unter „Offene Punkte“ des Laufs. Davor: vw-konzern.js am 02.10.2026 – nur teilweise (Elektromodelle VW/Audi/Škoda/Cupra, Porsche Cayenne Electric); offen geblieben: Plug-in-Hybride, Porsche Taycan/Macan/Hybride, Bentley, Lamborghini, ID.7, ID. Buzz.
+
+Nächste drei Dateien: renault-nissan-mitsubishi.js, hyundai-kia.js, toyota-lexus.js
+
+## 2026-10-02 – Lauf 2 (Rotationsdateien: bmw-group.js, mercedes.js, stellantis.js)
+
+Zweiter Lauf am selben Tag wie Wochenlauf 1; Teil A daher nur als Nachtrag zu den drei Rotationsdateien.
+
+### Teil A – Neuigkeiten
+
+- **BMW iX5 60 xDrive** (bmw-group.js): neu als `planned`, Bestellstart für 08.10.2026 angekündigt; 425 kW, 805 Nm, 141 kWh netto, 800 V, bis 845 km, DC 460 kW, AC 22 kW, 10–80 % in 23 min, hintere E-Maschine 242 kW Dauerleistung. Quellen: https://www.press.bmwgroup.com/switzerland/article/attachment/T0458909DE/651875 (BMW-Datenblatt 06/2026), https://www.sparneuwagen.de/news/bmw-ix5-erster-elektro-x5-ab-oktober-bestellbar/ , https://ev-database.org/de/pkw/3664/BMW-iX5-60-xDrive (Bruttokapazität 148 kWh)
+- **BMW iX3 40 xDrive** (bmw-group.js): am 30.09.2026 im Konfigurator, 82,6 kWh, 621 km, 275 kW. Quelle: https://www.bmwblog.com/2026/09/30/2027-bmw-ix3-40-xdrive-revealed/
+- **Mercedes VLE** (mercedes.js): `status: "planned"` entfernt; VLE 300 seit April, VLE 400 4MATIC seit September 2026 bestellbar. Quelle: https://www.electrive.net/2026/09/09/mercedes-vle-kostet-mit-allradantrieb-ab-78-500-euro/
+- **Opel Corsa GSE** (stellantis.js): seit September 2026 bestellbar, 207 kW, 374 km. Quellen: https://www.media.stellantis.com/de-de/opel/press/start-frei-fuer-den-neuen-hot-hatch-opel-corsa-gse-ab-sofort-bestellbar , https://insideevs.de/news/794543/opel-corsa-gse-2026-daten/
+- **Peugeot E-208 GTi** (stellantis.js): ab 09/2026, 207 kW, 345 Nm, bis 374 km. Quelle: https://www.peugeot.de/modelle/neuer-e-208-gti/technische-daten-abmessungen.html
+- **Lancia Gamma** (stellantis.js): am 16.09.2026 vorgestellt, bleibt `planned` (Bestellstart offen); Batterien 73,7/97,2 kWh in den Hinweisen ergänzt. Quellen: https://insideevs.de/news/796953/neuer-lancia-gamma-2026-elektro/ , https://www.meinauto.de/news/2026/05/lancia-gamma-zeigt-sich-erstmals-italienisches-crossover-zunaechst-ohne-deutschland-start
+
+### Teil B – Prüfung bmw-group.js
+
+- **iX3 (Neue Klasse)**: iX3 40 (Heckantrieb, 235 kW, 500 Nm, 82,6 kWh, 635 km, DC 300 kW, 21 min) ergänzt; DC 400 kW/21 min nur noch beim 50 xDrive. Quellen: https://www.heise.de/news/BMW-iX3-40-Neues-Einstiegsmodell-mit-235-kW-und-635-km-Reichweite-11242385.html , https://www.electrive.net/2026/03/31/bmw-bringt-neue-ix3-version-mit-heckantrieb-ab-63-400-euro/
+- **i3**: Verbrauch (14,3 bzw. 13,4 kWh/100 km), Hinweis auf bidirektionales Laden und i3 M60 xDrive (2027). Quelle: https://ecomento.de/2026/09/30/neuer-bmw-i3-zwei-elektroauto-versionen-zum-marktstart/
+- **i7 → Facelift 2026**: alte Varianten (eDrive50, xDrive60, M70 mit 101,7 kWh) ersetzt durch 50 xDrive (335 kW, 660 Nm, 728 km), 60 xDrive (400 kW, 745 Nm, 727 km), M70 xDrive (500 kW, 686 km); 112,5 kWh netto mit Rundzellen der Neuen Klasse, weiterhin 400 V, DC 250 kW, 10–80 % in 29 min. Quellen: https://www.electrive.net/2026/04/22/bmw-bringt-neue-klasse-technologien-in-den-i7/ , https://www.bimmertoday.de/2026/04/22/bmw-i7-facelift-nur-728-km-wltp-im-elektro-7er-erste-m-sport-fotos/
+- **750e / M760e xDrive (Facelift 2026)**: Reichweiten 82 bzw. 80 km, Systemleistung M760e 450 kW (vorher 420 kW); nicht belegte Verbrennerleistung des M760e entfernt. Quelle: https://www.bmw-syndikat.de/bmwsyndikatforum/bmw_news_blog_t408561_BMW_7er_G70_LCI_Technische_Daten_2026__i7__750e__M760e__740d___Reichweiten_im_Ueberblick_Automobil-_und_BMW_News-Blog.html
+- **X5 50e / M60e xDrive (G65)** neu als `planned`: 26,5/29,48 kWh, 317 V, E-Maschine 145 kW/280 Nm bei 6000/min, Systemleistung 360 bzw. 450 kW, bis 102 bzw. 98 km; bisheriger X5 xDrive50e als G05 gekennzeichnet. Quelle: BMW-Datenblatt 06/2026 (siehe oben).
+- **MINI Countryman E / SE ALL4**: seit März 2026 SiC-Inverter, 65,2 kWh netto, 501 bzw. 467 km (vorher 462/432 km); nicht mehr belegte Bruttokapazität entfernt. Quellen: https://www.press.bmwgroup.com/deutschland/article/attachment/T0455156DE/642988 , https://www.bimmertoday.de/2026/01/28/mini-countryman-e-u25-upgrade-hebt-elektro-reichweite-uber-500-kilometer/
+
+### Teil B – Prüfung mercedes.js
+
+- **CLA**: CLA 250 (71 kWh NMC, 200 kW, 674 km, DC 250 kW, 20 min) ergänzt; CLA 200 mit 335 Nm, 12,3 kWh/100 km, 20 min; CLA 350 4MATIC 771 km. Quellen: https://www.electrive.net/2026/02/13/mercedes-bringt-vierte-antriebsvariante-des-cla/ , https://www.electrive.net/2025/10/16/mit-lfp-batterie-bestellstart-fuer-die-basisversion-des-mercedes-cla/
+- **GLB**: Drehmomente 335/515 Nm ergänzt. Quelle: https://www.inside-digital.de/e-autos/mercedes-glb-250plus-mit-eq-technologie-2026
+- **GLC**: GLC 250 (260 kW, 85 kWh) und GLC 300 4MATIC (310 kW, 85 kWh, 613 km, DC 320 kW, 22 min) ergänzt, seit 09.06.2026 bestellbar; Marktstart auf 2025 korrigiert; GLC 400 mit 14,9 kWh/100 km. Quellen: https://www.electrive.net/2026/06/01/mercedes-erweitert-angebot-des-elektro-glc-um-zwei-varianten/ , https://mbpassion.de/2026/05/glc-250-und-300-4matic-varianten-ab-09-juni-2026-bestellbar/ , https://www.inside-digital.de/e-autos/mercedes-glc-400-4matic-eq
+- **C-Klasse mit EQ Technologie** neu: C 400 4MATIC, 360 kW, 94/100 kWh, bis 762 km, DC 330 kW, seit Mai 2026 bestellbar. Quellen: https://mbpassion.de/2026/05/c-400-4matic-eq-startet-bei-67-71100-euro/ , https://firstev.de/mercedes/c/ , https://jesmb.de/33353/
+- **EQS**: Limousine auf Modellpflege 2026 umgestellt (800 V, 122 kWh, DC 350 kW; EQS 400/450+/500 4MATIC/580 4MATIC, bis 926 km); EQS SUV als eigenes Modell mit bisheriger 400-V-Technik abgetrennt, die dort nicht belegten Reichweiten (stammten von der Limousine) entfernt. Quelle: https://www.electrive.net/2026/04/14/mercedes-spendiert-dem-eqs-ein-800-volt-system/
+- **VLE**: Varianten VLE 300 (203 kW, Frontantrieb, 678 km) und VLE 400 4MATIC (310 kW, 654 km), 115 kWh NMC, DC 300 kW, 25 min. Quelle: siehe Teil A.
+
+### Teil B – Prüfung stellantis.js
+
+- **Peugeot E-308**: 58,3 kWh nutzbar, 450 km, 270 Nm, V2L (vorher 54-kWh-Variante). Quellen: https://www.peugeot.de/modelle/neuer-308/elektro.html , https://www.inside-digital.de/e-autos/peugeot-e-308-2026
+- **Opel Astra Electric**: Facelift 2026 mit 58 kWh, 454 km, 10–80 % in 32 min, V2L. Quelle: https://ecomento.de/2025/12/10/opel-astra-ab-2026-mit-neuem-gesicht-und-mehr-e-auto-reichweite/
+- **Jeep Compass**: 73,7 kWh/500 km, 96,3 kWh/674 km (vorher 650 km), 4xe mit 96,1/103 kWh und 606 km (vorher 600 km). Quellen: https://www.jeep.de/neuer-jeep-compass/4xe-elektro/technische-details , https://www.elektroquatsch.de/artikel/jeep-compass-elektro-2026-drei-versionen-preise-276kw-674km
+- **Citroën ë-C5 Aircross**: 520/680 km bestätigt, Long Range inzwischen bestellbar – keine Änderung. Quelle: https://insideevs.de/news/757927/citroen-e-c5-aircross-vorgestellt/
+- **Leapmotor B05**: `planned` entfernt (seit Ende April 2026 bestellbar); 160 kW, 240 Nm, 56,2 kWh/401 km und 67,1 kWh/482 km. Quelle: https://www.electrive.net/2026/04/28/leapmotor-b05-ist-in-europa-ab-26-900-euro-bestellbar/
+- **Leapmotor B10 Hybrid EV** (REEV) neu: 160 kW/240 Nm, 18,8 kWh, 86 km elektrisch, Generator 50 kW, AC 6,6 kW, DC 46 kW. Quellen: https://www.electrive.net/2026/04/29/leapmotor-b10-als-range-extender-ab-32-400-euro-bestellbar/ , https://ecomento.de/2026/04/30/leapmotor-b10-hybrid-ev-ab-32400-euro-bestellbar/
+- **Leapmotor B03X** neu: 39,8 kWh/292 km und 53,0 kWh/382 km (LFP), Frontantrieb, AC 11 kW, seit 01.07.2026 bestellbar. Quellen: https://www.electrive.net/2026/07/07/leapmotor-ruft-fuer-b03x-ab-24-900-euro-auf/ , https://www.media.stellantis.com/de-de/leapmotor/press/bestellstart-leapmotor-b03x-einfach-cleveres-auto-setzt-neue-massstaebe-im-segment-der-urbanen-crossover-modelle
+
+### Offene Punkte
+
+- Alle drei Dateien nur teilweise geprüft. Weiterhin ungeprüftes Modellwissen: **BMW** iX1/iX2, i4, i5, iX, 2er/X1-, 3er-, 5er-, X3-Plug-in-Hybride, M5, XM, MINI Cooper/Aceman, Rolls-Royce Spectre, Garantiebedingungen; **Mercedes** EQA/EQB, EQE, EQS SUV, G 580, EQV, EQT, alle Plug-in-Hybride, AMG E Performance, Garantiebedingungen; **Stellantis** Citroën ë-C3/ë-C4, DS, Fiat, Abarth, Alfa Romeo, Maserati, Hochdachkombis/Vans, Plug-in-Hybride, Leapmotor T03/C10, Garantiebedingungen.
+- Widersprüchliche Angaben, daher weggelassen: Batterie BMW i3 40 xDrive (82,6/82,8 kWh); Drehmoment i7 M70 (1015/1100 Nm); DC-Leistung und Drehmoment iX3 40 xDrive; Reichweite Mercedes GLC 250 (617/665 km) und EQS 580 4MATIC; Ladezeit GLC 400 (22/23 min); Leistung und DC-Leistung Leapmotor B03X Life (130/135 kW, 100/110 kW); netto/brutto bei Leapmotor B10 Hybrid EV und B03X sowie Opel Astra Electric (58 kWh) unklar.
+- Mercedes GLB: Die eingetragenen Reichweiten 631/614 km sind nicht bestätigt – Fachportale nennen 542/521 km; gegen die Mercedes-Preisliste prüfen. Mercedes C 400 4MATIC: Reichweite 762 km ist der Bestwert (Spanne 592–762 km).
+- Leapmotor B10 Hybrid EV: elektrische Reichweite 86 km laut Fachmedien zum Bestellstart, die frühere Stellantis-Pressemitteilung nannte 80 km.
+- Stellantis e-CMP-Modelle: Die Ladezeit 27 min ist als 10–80 % eingetragen, Peugeot nennt beim E-208 GTi 27 min für 20–80 % – für alle e-CMP-Modelle prüfen.
+- Reichweiten der EQS Limousine und des i7 sind Bestwerte der jeweiligen Spanne; Varianten und Angaben des BMW iX1/iX2 nach der Technikpflege 2026 (SiC-Inverter wie beim Countryman?) noch prüfen.
+- Angekündigt und noch nicht eingetragen: Mercedes GLC 300+ und Basis-GLC (Ende 2026), C 300 4MATIC, BMW i3 M60 xDrive (2027), Peugeot 208 auf STLA Small, Neuheiten des Pariser Autosalons (12.–18.10.2026).
+- Die offenen Punkte aus Wochenlauf 1 (u. a. Mazda 6e 78 kWh, Geely E2, Renault Megane/Scenic, MG IM5/IM6, Smart #2) gelten weiter.
+- Mehrere Angaben stammen aus Fachmedien statt aus Hersteller-Datenblättern (Mercedes- und Stellantis-Presseseiten waren nicht abrufbar).
 
 ## 2026-10-02 – Wochenlauf 1 (Rotationsdatei: vw-konzern.js)
 

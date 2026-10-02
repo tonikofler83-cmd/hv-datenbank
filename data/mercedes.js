@@ -15,18 +15,27 @@ EVDB.brand({
       notes: "MMA: 800 V, Antriebseinheit eATS 2.0 mit SiC-Inverter und 2-Gang-Getriebe an der Hinterachse, 4MATIC mit abkoppelbarer PSM vorn. NMC-Zellen mit Siliziumoxid-Anode. Zum Marktstart kein DC-Laden an reinen 400-V-Säulen (DC-Wandler später/optional). Bidirektional vorbereitet.",
       d: { chem: "NMC (Anode mit Siliziumoxid)", motor: "PSM", motorMaker: "Mercedes-Benz eATS 2.0", ratio: "2-Gang: 11 : 1 / 5 : 1", ac: 11, t: 22 },
       variants: [
-        { name: "CLA 200", net: 58, chem: "LFP", range: 541, layout: "RWD", kw: 165, dc: 200 },
+        { name: "CLA 200", net: 58, chem: "LFP", range: 541, cons: 12.3, layout: "RWD", kw: 165, nm: 335, dc: 200, t: 20 },
+        { name: "CLA 250", net: 71, range: 674, layout: "RWD", kw: 200, nm: 335, dc: 250, t: 20 },
         { name: "CLA 250+", net: 85, range: 792, layout: "RWD", kw: 200, nm: 335, dc: 320 },
-        { name: "CLA 350 4MATIC", net: 85, range: 770, layout: "AWD", kw: 260, nm: 515, dc: 320 }
+        { name: "CLA 350 4MATIC", net: 85, range: 771, layout: "AWD", kw: 260, nm: 515, dc: 320 }
       ] },
     { name: "GLB mit EQ Technologie", type: "BEV", seg: "Kompakt-SUV (bis 7 Sitze)", platform: "MMA", since: 2026, arch: "800 V",
       notes: "Zweites MMA-Modell, Antrieb und Batterie wie CLA.",
       d: { net: 85, chem: "NMC", motor: "PSM", motorMaker: "Mercedes-Benz eATS 2.0", ac: 11, dc: 320 },
-      variants: [{ name: "GLB 250+", range: 631, layout: "RWD", kw: 200 }, { name: "GLB 350 4MATIC", range: 614, layout: "AWD", kw: 260 }] },
-    { name: "GLC mit EQ Technologie", type: "BEV", seg: "Mittelklasse-SUV", platform: "MB.EA-M", since: 2026, arch: "800 V",
-      notes: "Neue Elektroplattform MB.EA: 800 V, 2-Gang-Getriebe hinten, One-Box-Bremssystem, bidirektionales Laden vorbereitet.",
-      d: { net: 94, chem: "NMC", motor: "PSM", ac: 11, dc: 330 },
-      variants: [{ name: "GLC 400 4MATIC", range: 713, layout: "AWD", kw: 360, nm: 800 }] },
+      variants: [{ name: "GLB 250+", range: 631, layout: "RWD", kw: 200, nm: 335 }, { name: "GLB 350 4MATIC", range: 614, layout: "AWD", kw: 260, nm: 515 }] },
+    { name: "C-Klasse mit EQ Technologie", type: "BEV", seg: "Mittelklasse", platform: "MB.EA-M", since: 2026, arch: "800 V",
+      notes: "Elektrische C-Klasse auf eigener Elektroarchitektur (800 V, MB.OS), Rekuperation bis 300 kW, lädt in 10 min bis zu 325 km nach. C 400 4MATIC seit Mai 2026 bestellbar; weitere Varianten (u. a. C 300 4MATIC) folgen.",
+      d: { chem: "NMC", motor: "PSM", ac: 11 },
+      variants: [{ name: "C 400 4MATIC", net: 94, gross: 100, range: 762, cons: 14.1, layout: "AWD", kw: 360, dc: 330 }] },
+    { name: "GLC mit EQ Technologie", type: "BEV", seg: "Mittelklasse-SUV", platform: "MB.EA-M", since: 2025, arch: "800 V",
+      notes: "Neue Elektroplattform MB.EA: 800 V, 2-Gang-Getriebe hinten, One-Box-Bremssystem, bidirektionales Laden vorbereitet. GLC 250 und GLC 300 4MATIC seit 09.06.2026 bestellbar; für Ende 2026 angekündigt: GLC 300+ (94 kWh, 270 kW, Heckantrieb) und ein Basismodell (64 kWh, 230 kW).",
+      d: { chem: "NMC", motor: "PSM", ac: 11 },
+      variants: [
+        { name: "GLC 250", net: 85, layout: "RWD", kw: 260, dc: 320, t: 22 },
+        { name: "GLC 300 4MATIC", net: 85, range: 613, layout: "AWD", kw: 310, dc: 320, t: 22 },
+        { name: "GLC 400 4MATIC", net: 94, range: 713, cons: 14.9, layout: "AWD", kw: 360, nm: 800, dc: 330 }
+      ] },
     { name: "EQA / EQB", type: "BEV", seg: "Kompakt-SUV", platform: "MFA2 (Verbrenner-Plattform)", since: 2021, arch: "400 V",
       notes: "Frontmotor als ASM, 4MATIC mit zusätzlicher PSM an der Hinterachse. Auslauf zugunsten der MMA-Modelle.",
       d: { chem: "NMC", ac: 11, dc: 100, t: 32 },
@@ -42,18 +51,33 @@ EVDB.brand({
         { name: "EQE 500 4MATIC", net: 96, range: 660, layout: "AWD", kw: 300, nm: 858 },
         { name: "AMG EQE 53 4MATIC+", net: 90.6, v: 328, range: 526, layout: "AWD", kw: 460, nm: 950 }
       ] },
-    { name: "EQS (Limousine / SUV)", type: "BEV", seg: "Luxusklasse", platform: "EVA2", since: 2021, arch: "400 V", notes: EVA + " Batterie 12 Module, ca. 396 V Nennspannung.",
+    { name: "EQS Limousine (Modellpflege 2026)", type: "BEV", seg: "Luxusklasse", platform: "EVA2", since: 2021, arch: "800 V",
+      notes: "Mit der Modellpflege 2026 (Produktion ab April 2026 in der Factory 56, Sindelfingen) Umstellung auf 800-V-Bordnetz, neue Batterie mit 122 kWh (EQS 400: 112 kWh), effizientere Antriebe mit 2-Gang-Getriebe an der Hinterachse, DC-Laden bis 350 kW (bis zu 320 km in 10 min). Optional Steer-by-Wire.",
+      d: { net: 122, chem: "NMC", motor: "PSM", ac: 11, dc: 350 },
+      variants: [
+        { name: "EQS 400", net: 112, range: 810, kw: 270 },
+        { name: "EQS 450+", range: 926, layout: "RWD", kw: 300 },
+        { name: "EQS 500 4MATIC", range: 869, layout: "AWD", kw: 350 },
+        { name: "EQS 580 4MATIC", layout: "AWD", kw: 430 }
+      ] },
+    { name: "EQS SUV", type: "BEV", seg: "Luxus-SUV", platform: "EVA2", since: 2022, arch: "400 V", notes: EVA + " Batterie 12 Module, ca. 396 V Nennspannung.",
       d: { net: 118, v: 396, chem: "NMC 811", cellMaker: "CATL", motor: "PSM", ac: 11, dc: 200, t: 31 },
       variants: [
-        { name: "EQS 450+", range: 821, layout: "RWD", kw: 265, nm: 568 },
-        { name: "EQS 580 4MATIC", range: 790, layout: "AWD", kw: 400, nm: 858 }
+        { name: "EQS SUV 450+", layout: "RWD", kw: 265, nm: 568 },
+        { name: "EQS SUV 580 4MATIC", layout: "AWD", kw: 400, nm: 858 }
       ] },
     { name: "G 580 mit EQ Technologie", type: "BEV", seg: "Geländewagen", platform: "Leiterrahmen (W465)", since: 2024, arch: "400 V",
       notes: "Vier radnahe E-Maschinen (je 108 kW) mit jeweils eigenem 2-Gang-Getriebe (Geländeuntersetzung), Batterie im Leiterrahmen integriert, verwindungssteifes Gehäuse mit Unterfahrschutz aus Carbon-Verbund.",
       variants: [{ name: "G 580", net: 116, chem: "NMC", range: 473, layout: "AWD", kw: 432, nm: 1164, motor: "PSM", ratio: "je Rad schaltbare Geländeuntersetzung", ac: 11, dc: 200, t: 32 }] },
     { name: "EQV / V-Klasse elektrisch", type: "BEV", seg: "Van", since: 2020, arch: "400 V",
       variants: [{ name: "EQV 300", net: 90, chem: "NMC", range: 363, layout: "FWD", kw: 150, nm: 365, motor: "PSM", ac: 11, dc: 110 }] },
-    { name: "VLE", type: "BEV", seg: "Großraumlimousine", platform: "VAN.EA", since: 2026, status: "planned", arch: "800 V", notes: "Erste Baureihe der Van-Elektroarchitektur VAN.EA (800 V); Marktstart 2026 angekündigt.", variants: [] },
+    { name: "VLE", type: "BEV", seg: "Großraumlimousine", platform: "VAN.EA", since: 2026, arch: "800 V",
+      notes: "Erste Baureihe der Van-Elektroarchitektur VAN.EA (800 V). VLE 300 seit April 2026 bestellbar, VLE 400 4MATIC seit September 2026; 5 bis 8 Sitze, Anhängelast bis 2,5 t (4MATIC).",
+      d: { net: 115, chem: "NMC", dc: 300, t: 25 },
+      variants: [
+        { name: "VLE 300", range: 678, layout: "FWD", kw: 203 },
+        { name: "VLE 400 4MATIC", range: 654, layout: "AWD", kw: 310 }
+      ] },
     { name: "EQT / eCitan", type: "BEV", seg: "Hochdachkombi", platform: "CMF-CD (Renault Kangoo)", since: 2023, arch: "400 V",
       variants: [{ name: "EQT 200", net: 45, chem: "NMC", range: 282, layout: "FWD", kw: 90, nm: 245, motor: "EESM", motorMaker: "Renault", ac: 22, dc: 80 }] },
     { name: "A 250 e / CLA 250 e / GLA 250 e", type: "PHEV", seg: "Kompaktklasse", platform: "MFA2", since: 2020, arch: "400 V",
