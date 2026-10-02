@@ -1,0 +1,41 @@
+<title>HV-Datenbank Europa</title>
+<!-- Online-Fassung (claude.ai-Artifact). Inhalt identisch mit index.html, nur ohne html/head/body-Gerüst.
+     Wird zusammen mit styles.css, app.js und data/*.js veröffentlicht. -->
+<link rel="stylesheet" href="styles.css">
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#start">⚡ HV-Datenbank <span>Elektro- &amp; Hybridfahrzeuge in Europa</span></a>
+    <div id="stats" class="stats"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Suche: Hersteller, Modell, Plattform, Zellchemie, Motorhersteller …" autocomplete="off">
+    <div id="typeChips" class="chips"></div>
+    <select id="fStatus" title="Status">
+      <option value="">Status: alle</option>
+      <option value="available">verfügbar</option>
+      <option value="planned">geplant / angekündigt</option>
+    </select>
+    <select id="fVolt" title="Spannungslage">
+      <option value="">Spannungslage: alle</option>
+      <option value="400">400-V-Klasse</option>
+      <option value="800">800-V-Klasse</option>
+    </select>
+    <nav class="views">
+      <a href="#start" id="navBrands">Hersteller</a>
+      <a href="#tabelle" id="navTable">Vergleichstabelle</a>
+    </nav>
+  </div>
+  <main id="app"><p class="muted">Daten werden geladen …</p></main>
+  <footer>
+    <p id="metaNote"></p>
+    <p>Alle Angaben ohne Gewähr. Reichweiten nach WLTP (sofern nicht anders angegeben), Kapazitäten in kWh, „k. A.“ = keine gesicherte Angabe.
+    Garantiebedingungen sind marktabhängig – maßgeblich sind die Unterlagen des Herstellers/Importeurs im jeweiligen Land.
+    Nicht enthalten: 12-/48-V-Mildhybride und Leichtfahrzeuge (L6e/L7e).</p>
+  </footer>
+</div>
+
+<script src="data/manifest.js"></script>
+<script src="app.js"></script>
