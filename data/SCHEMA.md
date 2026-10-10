@@ -42,7 +42,7 @@ Jede Datendatei ruft pro Marke einmal `EVDB.brand({...})` auf. Eine neue Datei m
 | `pack` | | Batterieaufbau (Module, Verschaltung, Cell-to-Pack …) |
 | `range` | km | elektrische Reichweite WLTP (bei PHEV: EAER). Anderer Zyklus (CLTC/EPA) nur mit Hinweis in `notes` oder im Variantennamen |
 | `cons` | kWh/100 km | Verbrauch WLTP |
-| `layout` | | `FWD`, `RWD`, `AWD` |
+| `layout` | | `FWD` (Vorderachsantrieb), `RWD` (Hinterachsantrieb), `AWD` (Allradantrieb) – Grundlage des Antriebsfilters, bei jeder Variante angeben |
 | `kw` | kW | max. Leistung des E-Antriebs (BEV: Systemleistung; Hybrid: E-Maschine) |
 | `kwCont` | kW | Dauerleistung (30-Minuten-Leistung nach UN ECE R85, Feld P.2 der Zulassung) |
 | `nm` | Nm | max. Drehmoment |
@@ -56,6 +56,19 @@ Jede Datendatei ruft pro Marke einmal `EVDB.brand({...})` auf. Eine neue Datei m
 | `ac`, `dc` | kW | max. Ladeleistung AC / DC |
 | `port` | | Ladeanschluss; ohne Angabe setzt die App „CCS2“ (wenn `dc`) bzw. „Typ 2“ (wenn nur `ac`) |
 | `t` | min | DC-Ladezeit 10–80 % |
+
+## Quellen
+
+Reihenfolge der Verlässlichkeit:
+
+1. Herstellerangaben für den europäischen Markt: Webseiten, Konfiguratoren, Preislisten, Pressemappen, technische Datenblätter.
+2. Referenzdatenbanken (zum Abgleich und zum Füllen von Lücken, besonders Netto-/Bruttokapazität, Ladekurven, Ladezeiten, Zellchemie):
+   - https://ev-database.org/de
+   - https://vision-mobility.de/
+   - https://firstev.de/elektroautos-uebersicht/
+3. Seriöse Fachmedien (z. B. electrive.net, heise.de, auto-motor-und-sport.de, ecomento.de).
+
+Widersprechen sich Quellen, gilt die Herstellerangabe; ohne Herstellerangabe nur Werte eintragen, die mindestens zwei unabhängige Quellen übereinstimmend nennen. Jede Änderung im CHANGELOG mit URL belegen.
 
 ## Regeln für Aktualisierungen
 

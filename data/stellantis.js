@@ -151,7 +151,7 @@ EVDB.brand({ id: "leapmotor", name: "Leapmotor", country: "China", group: "Leapm
     notes: "Seit Ende April 2026 bestellbar. Batterie 18,8 kWh, Gesamtreichweite bis 900 km; DC-Laden 30–80 % in 30 min.",
     variants: [{ name: "Hybrid EV (18,8 kWh)", range: 86, layout: "RWD", kw: 160, nm: 240, ice: "1.5 Benziner (Generator, 50 kW)", ac: 6.6, dc: 46 }] },
   { name: "B05", type: "BEV", seg: "Kompaktklasse", platform: "LEAP 3.5", since: 2026, arch: "400 V", notes: "Kompakter Fünftürer (4,43 m), in Europa seit Ende April 2026 bestellbar.",
-    d: { kw: 160, nm: 240 },
+    d: { kw: 160, nm: 240, layout: "RWD", chem: "LFP", pack: "Cell-to-Chassis", ac: 11 },
     variants: [{ name: "Pro (56,2 kWh)", net: 56.2, range: 401 }, { name: "ProMax (67,1 kWh)", net: 67.1, range: 482 }] },
   { name: "B03X", type: "BEV", seg: "Kleinwagen-SUV", since: 2026, arch: "400 V", notes: "Seit 01.07.2026 bestellbar. Batterie als tragendes Strukturteil („Cell-to-Chassis 2.0 Plus“). DC-Laden 30–80 % in 16 bzw. 17 min.",
     d: { chem: "LFP", pack: "Cell-to-Chassis", layout: "FWD", ac: 11 },

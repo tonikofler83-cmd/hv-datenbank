@@ -4,7 +4,7 @@ Neueste Einträge oben. Jeder Lauf der automatischen Aktualisierung ergänzt hie
 
 ## Prüf-Rotation
 
-Pro Wochenlauf wird die nächste Datei dieser Liste vollständig gegen Herstellerquellen geprüft (danach wieder von vorn):
+Pro Monatslauf werden die nächsten drei Dateien dieser Liste gegen Herstellerquellen und die Referenzdatenbanken (ev-database.org, vision-mobility.de, firstev.de) geprüft (danach wieder von vorn):
 
 1. vw-konzern.js
 2. bmw-group.js
@@ -23,6 +23,13 @@ Pro Wochenlauf wird die nächste Datei dieser Liste vollständig gegen Herstelle
 Zuletzt geprüft: bmw-group.js, mercedes.js und stellantis.js am 02.10.2026 (Lauf 2) – jeweils nur teilweise, Einzelheiten unter „Offene Punkte“ des Laufs. Davor: vw-konzern.js am 02.10.2026 – nur teilweise (Elektromodelle VW/Audi/Škoda/Cupra, Porsche Cayenne Electric); offen geblieben: Plug-in-Hybride, Porsche Taycan/Macan/Hybride, Bentley, Lamborghini, ID.7, ID. Buzz.
 
 Nächste drei Dateien: renault-nissan-mitsubishi.js, hyundai-kia.js, toyota-lexus.js
+
+## 2026-10-10 – Antriebsfilter und Referenzquellen
+
+- **App**: Filter „Antrieb“ (Allradantrieb, Vorderachsantrieb, Hinterachsantrieb) ergänzt; er wirkt je Variante in Herstellerübersicht, Modelltabellen, Vergleichstabelle und CSV-Export. Bezeichnungen der Antriebsart entsprechend vereinheitlicht.
+- **Quellen**: ev-database.org/de, vision-mobility.de und firstev.de/elektroautos-uebersicht/ als Referenzdatenbanken in SCHEMA.md, im Fuß der Webapp und in der Aktualisierungsroutine aufgenommen.
+- **Leapmotor B05** (stellantis.js): Hinterachsantrieb, LFP, Cell-to-Chassis, AC 11 kW ergänzt. Quellen: https://www.elektroquatsch.de/artikel/leapmotor-b05-alle-infos-preise-und-reichweiten-2026 , https://www.autohled.cz/de/a/leapmotor/b05/leapmotor-b05-67-1-kwh-160kw-rwd-1225095
+- **Mercedes EQS 400** (mercedes.js): Hinterachsantrieb und 505 Nm ergänzt. Quellen: https://de.motor1.com/news/792869/mercedes-eqs-facelift-daten-preise/ , https://evkx.net/en/models/mercedes/eqs/eqs_400/specifications/ – offen: WLTP-Reichweite 810 km (Bestand) vs. 817 km (race24.asia), bei Monatslauf gegen Mercedes prüfen.
 
 ## 2026-10-02 – Lauf 2 (Rotationsdateien: bmw-group.js, mercedes.js, stellantis.js)
 

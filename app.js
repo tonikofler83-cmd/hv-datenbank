@@ -5,7 +5,7 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   const TYPES = { BEV: "Batterieelektrisch", PHEV: "Plug-in-Hybrid", HEV: "Vollhybrid", REEV: "Range Extender", FCEV: "Brennstoffzelle" };
-  const LAYOUT = { FWD: "Frontantrieb", RWD: "Heckantrieb", AWD: "Allradantrieb" };
+  const LAYOUT = { AWD: "Allradantrieb", FWD: "Vorderachsantrieb", RWD: "Hinterachsantrieb" };
   const MOTOR = {
     PSM: "PSM (permanenterregte Synchronmaschine)",
     ASM: "ASM (Asynchronmaschine)",
@@ -28,7 +28,7 @@
       ["ac", "AC-Ladeleistung", "kW"], ["dc", "DC-Ladeleistung max.", "kW"], ["port", "Ladeanschluss"], ["t", "DC 10–80 %", "min"]]]
   ];
 
-  const state = { q: "", types: new Set(), status: "", volt: "", sort: { k: "brand", dir: 1 } };
+  const state = { q: "", types: new Set(), status: "", volt: "", drive: "", sort: { k: "brand", dir: 1 } };
 
   // ---------- Datenaufbereitung ----------
   function prepare() {
@@ -55,14 +55,19 @@
     }
   }
 
+  // Typ- und Antriebsfilter wirken je Variante; ein Modell erscheint, wenn mindestens eine Variante passt
+  const variantOk = v => (!state.types.size || state.types.has(v.type)) && (!state.drive || v.layout === state.drive);
+  const shownVs = m => m.vs.filter(variantOk);
+
   function matches(m) {
     if (state.types.size && !m.types.some(t => state.types.has(t))) return false;
+    if (state.drive && !shownVs(m).length) return false;
     if (state.status && m.status !== state.status) return false;
     if (state.volt && m.voltClass !== state.volt) return false;
     if (state.q) for (const w of state.q.toLowerCase().split(/\s+/)) if (w && !m.hay.includes(w)) return false;
     return true;
   }
-  const filtering = () => state.types.size || state.status || state.volt || state.q;
+  const filtering = () => state.types.size || state.status || state.volt || state.drive || state.q;
 
   // ---------- Formatierung ----------
   function fmt(key, val, unit) {
@@ -113,7 +118,7 @@
   const initial = name => name.normalize("NFD").replace(/[̀-ͯ]/g, "").charAt(0).toUpperCase();
 
   function specTable(m) {
-    const vs = m.vs;
+    const vs = shownVs(m);
     if (!vs.length) return "";
     let h = `<div class="scroll"><table class="spec"><thead><tr><th></th>${vs.map(v => `<th>${esc(v.name || m.name)}${m.types.length > 1 ? " " + typeBadge(v.type) : ""}</th>`).join("")}</tr></thead><tbody>`;
     for (const [title, rows] of SECTIONS) {
@@ -132,7 +137,8 @@
   }
 
   function modelCard(m, open) {
-    const key = [span(m.vs, "net", "kWh"), span(m.vs, "range", "km"), span(m.vs, "kw", "kW"), m.arch].filter(Boolean).join(" · ");
+    const vs = shownVs(m);
+    const key = [span(vs, "net", "kWh"), span(vs, "range", "km"), span(vs, "kw", "kW"), m.arch].filter(Boolean).join(" · ");
     const meta = [["Fahrzeugklasse", m.seg], ["Plattform", m.platform], ["Systemspannung / Architektur", m.arch],
       ["Hybridsystem", m.hybrid], ["Marktstart", m.since]].filter(x => x[1]);
     return `<details class="model" id="m-${esc(m.name)}" ${open ? "open" : ""}>
@@ -170,7 +176,7 @@
   function rows() {
     const out = [];
     for (const b of DB.brands) for (const m of b.models) if (matches(m))
-      for (const v of m.vs) if (!state.types.size || state.types.has(v.type))
+      for (const v of shownVs(m))
         out.push(Object.assign({}, v, { brand: b.name, bid: b.id, model: m.name, arch: m.arch }));
     const { k, dir } = state.sort;
     return out.sort((a, b) => {
@@ -238,6 +244,7 @@
     $("#q").oninput = e => { state.q = e.target.value.trim(); route(); };
     $("#fStatus").onchange = e => { state.status = e.target.value; route(); };
     $("#fVolt").onchange = e => { state.volt = e.target.value; route(); };
+    $("#fDrive").onchange = e => { state.drive = e.target.value; route(); };
     window.addEventListener("hashchange", () => { route(); window.scrollTo(0, 0); });
     route();
   }

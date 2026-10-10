@@ -55,7 +55,7 @@ EVDB.brand({
       notes: "Mit der Modellpflege 2026 (Produktion ab April 2026 in der Factory 56, Sindelfingen) Umstellung auf 800-V-Bordnetz, neue Batterie mit 122 kWh (EQS 400: 112 kWh), effizientere Antriebe mit 2-Gang-Getriebe an der Hinterachse, DC-Laden bis 350 kW (bis zu 320 km in 10 min). Optional Steer-by-Wire.",
       d: { net: 122, chem: "NMC", motor: "PSM", ac: 11, dc: 350 },
       variants: [
-        { name: "EQS 400", net: 112, range: 810, kw: 270 },
+        { name: "EQS 400", net: 112, range: 810, layout: "RWD", kw: 270, nm: 505 },
         { name: "EQS 450+", range: 926, layout: "RWD", kw: 300 },
         { name: "EQS 500 4MATIC", range: 869, layout: "AWD", kw: 350 },
         { name: "EQS 580 4MATIC", layout: "AWD", kw: 430 }
