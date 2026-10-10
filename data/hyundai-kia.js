@@ -40,7 +40,7 @@ EVDB.brand({
     { name: "IONIQ 3", type: "BEV", seg: "Kompaktklasse", platform: "E-GMP (400 V)", since: 2026, arch: "400 V",
       notes: "Serienversion der Studie Concept Three, Fertigung in der Türkei seit August 2026. In Deutschland seit Anfang September 2026 bestellbar (ab 28.950 €). DC-Laden je nach Version bis 110–119 kW, 10–80 % in 29–30 min; AC 11 kW (große Batterie optional 22 kW).",
       d: { layout: "FWD", ac: 11 },
-      variants: [{ name: "42 kWh", net: 42, range: 344, kw: 108 }, { name: "61 kWh", net: 61, range: 497, kw: 99 }] },
+      variants: [{ name: "42 kWh", net: 42, chem: "LFP", range: 344, kw: 108, dc: 119 }, { name: "61 kWh", net: 61, chem: "NMC", range: 497, kw: 99, dc: 110, t: 30 }] },
     { name: "NEXO (2. Generation)", type: "FCEV", seg: "Mittelklasse-SUV", since: 2025, arch: "400 V",
       hybrid: "Brennstoffzellen-Hybrid: PEM-Stack lädt Pufferbatterie und versorgt E-Maschine; drei 700-bar-Tanks (6,69 kg H₂)",
       variants: [{ name: "NEXO", gross: 2.64, chem: "Li-Ion", range: 826, layout: "FWD", kw: 150, nm: 350, motor: "PSM", ice: "PEM-Brennstoffzelle, 110 kW (brutto)", port: "H₂ 700 bar (SAE J2601)" }] },
@@ -57,7 +57,7 @@ EVDB.brand({
   models: [
     { name: "EV2", type: "BEV", seg: "Kleinwagen-SUV", platform: "E-GMP (400 V)", since: 2026, arch: "400 V", notes: EGMP400 + " Gebaut in Žilina (Slowakei).",
       d: { layout: "FWD", motor: "PSM", ac: 11 },
-      variants: [{ name: "Standard Range (42,2 kWh)", net: 42.2, chem: "LFP", range: 317, kw: 108 }, { name: "Long Range (61 kWh)", net: 61, chem: "NMC", range: 448, kw: 100 }] },
+      variants: [{ name: "Standard Range (42,2 kWh)", net: 42.2, chem: "LFP", range: 317, kw: 108 }, { name: "Long Range (61 kWh)", net: 61, chem: "NMC", range: 448, kw: 100, nm: 250, t: 30 }] },
     { name: "EV3", type: "BEV", seg: "Kompakt-SUV", platform: "E-GMP (400 V)", since: 2024, arch: "400 V", notes: EGMP400,
       d: { chem: "NMC", cellMaker: "LG Energy Solution", layout: "FWD", kw: 150, nm: 283, motor: "PSM", ac: 11 },
       variants: [{ name: "58,3 kWh", net: 58.3, range: 436, dc: 102, t: 29 }, { name: "81,4 kWh", net: 81.4, range: 605, dc: 128, t: 31 }] },

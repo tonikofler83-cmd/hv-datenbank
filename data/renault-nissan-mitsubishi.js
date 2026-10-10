@@ -21,9 +21,10 @@ EVDB.brand({
       d: { chem: "NMC", cellMaker: "AESC / LG Energy Solution", layout: "FWD", motor: "EESM", motorMaker: "Renault (Cléon)", ac: 11 },
       variants: [{ name: "Urban Range 90 kW (40 kWh)", net: 40, range: 308, kw: 90, nm: 225, dc: 80 }, { name: "Comfort Range 110 kW (52 kWh)", net: 52, range: 409, kw: 110, nm: 245, dc: 100 }] },
     { name: "Twingo E-Tech", type: "BEV", seg: "Kleinstwagen", platform: "AmpR Small", since: 2026, arch: "400 V", notes: "In rund zwei Jahren mit chinesischem Entwicklungszentrum entwickelt, gebaut in Novo Mesto. Erste LFP-Batterie der Marke (Cell-to-Pack).",
-      variants: [{ name: "60 kW (27,5 kWh)", net: 27.5, chem: "LFP", cellMaker: "CATL", pack: "Cell-to-Pack", range: 263, layout: "FWD", kw: 60, nm: 175, motor: "PSM", ac: 6.6, dc: 50 }] },
-    { name: "Megane E-Tech", type: "BEV", seg: "Kompaktklasse", platform: "AmpR Medium", since: 2022, arch: "400 V", notes: AMPR_M,
-      variants: [{ name: "EV60 160 kW", net: 60, v: 400, chem: "NMC", cellMaker: "LG Energy Solution", pack: "12 Module, 288 Zellen", range: 468, layout: "FWD", kw: 160, nm: 300, motor: "EESM", motorMaker: "Renault (Cléon)", ac: 22, dc: 130 }] },
+      variants: [{ name: "60 kW (27,5 kWh)", net: 27.5, gross: 29, chem: "LFP", cellMaker: "CATL", pack: "Cell-to-Pack", range: 262, layout: "FWD", kw: 60, nm: 175, motor: "PSM", ac: 11, dc: 50, t: 30 }] },
+    { name: "Megane E-Tech (Modelljahr 2026)", type: "BEV", seg: "Kompaktklasse", platform: "AmpR Medium", since: 2022, arch: "400 V",
+      notes: AMPR_M + " Modelljahr 2026 mit LFP-Batterie (67 kWh); Einstiegsversion mit 40 kWh entfallen. Serienmäßig 11 kW bidirektionaler AC-Lader, Wärmepumpe und Batterievorkonditionierung, 22 kW AC optional. Ladezeit laut Renault 15–80 % in rund 24 min.",
+      variants: [{ name: "EV67 160 kW", net: 67, v: 400, chem: "LFP", range: 494, layout: "FWD", kw: 160, nm: 300, motor: "EESM", motorMaker: "Renault (Cléon)", ac: 11, dc: 165 }] },
     { name: "Scenic E-Tech", type: "BEV", seg: "Kompakt-SUV", platform: "AmpR Medium", since: 2024, arch: "400 V", notes: AMPR_M,
       d: { chem: "NMC", cellMaker: "LG Energy Solution", layout: "FWD", motor: "EESM", motorMaker: "Renault (Cléon)", ac: 22 },
       variants: [{ name: "Comfort Range 125 kW (60 kWh)", net: 60, range: 430, kw: 125, nm: 280, dc: 130 }, { name: "Long Range 160 kW (87 kWh)", net: 87, range: 625, kw: 160, nm: 300, dc: 150, t: 37 }] },
@@ -47,7 +48,7 @@ EVDB.brand({
     { name: "Spring", type: "BEV", seg: "Kleinstwagen", platform: "CMF-A", since: 2021, arch: "400 V", notes: "Gebaut in China (Dongfeng). Modelljahr 2026 mit LFP-Batterie und stärkeren Motoren.",
       d: { layout: "FWD", motor: "PSM", ac: 7 },
       variants: [
-        { name: "Electric 70 (2026)", net: 24.3, chem: "LFP", range: 225, kw: 52, dc: 40 },
+        { name: "Electric 70 (2026)", net: 24.3, chem: "LFP", range: 221, kw: 52, dc: 40 },
         { name: "Electric 100 (2026)", net: 24.3, chem: "LFP", range: 225, kw: 75, dc: 40 },
         { name: "Electric 65 (bis 2025)", net: 26.8, chem: "NMC", range: 228, kw: 48, nm: 113, dc: 30 }
       ] },
@@ -80,7 +81,7 @@ EVDB.brand({
     { name: "Leaf (3. Generation)", type: "BEV", seg: "Kompakt-Crossover", platform: "CMF-EV", since: 2026, arch: "400 V",
       notes: "3-in-1-Antrieb (Motor, Inverter, Getriebe), flüssigkeitsgekühlte Batterie, CCS statt CHAdeMO, V2L/V2G. Gebaut in Sunderland.",
       d: { chem: "NMC", cellMaker: "AESC", layout: "FWD", motor: "EESM", ac: 11 },
-      variants: [{ name: "52 kWh", net: 52, range: 436, kw: 130, nm: 345, dc: 105 }, { name: "75 kWh", net: 75, range: 622, kw: 160, nm: 355, dc: 150, t: 30 }] },
+      variants: [{ name: "52 kWh", net: 52, range: 436, kw: 130, nm: 345, dc: 105 }, { name: "75 kWh", net: 75, range: 624, kw: 160, nm: 355, dc: 150, t: 30 }] },
     { name: "Ariya", type: "BEV", seg: "Mittelklasse-SUV", platform: "CMF-EV", since: 2022, arch: "400 V",
       d: { chem: "NMC", cellMaker: "CATL", motor: "EESM", ac: 22, dc: 130 },
       variants: [

@@ -20,9 +20,35 @@ Pro Monatslauf werden die nächsten drei Dateien dieser Liste gegen Herstellerqu
 12. china-weitere.js
 13. sonstige-exoten.js
 
-Zuletzt geprüft: bmw-group.js, mercedes.js und stellantis.js am 02.10.2026 (Lauf 2) – jeweils nur teilweise, Einzelheiten unter „Offene Punkte“ des Laufs. Davor: vw-konzern.js am 02.10.2026 – nur teilweise (Elektromodelle VW/Audi/Škoda/Cupra, Porsche Cayenne Electric); offen geblieben: Plug-in-Hybride, Porsche Taycan/Macan/Hybride, Bentley, Lamborghini, ID.7, ID. Buzz.
+Zuletzt geprüft: renault-nissan-mitsubishi.js, hyundai-kia.js und toyota-lexus.js am 10.10.2026 – jeweils nur teilweise (Stichproben der Neuheiten), Einzelheiten unter „Offene Punkte“ des Laufs. Davor: bmw-group.js, mercedes.js und stellantis.js am 02.10.2026 (Lauf 2) – jeweils nur teilweise. Davor: vw-konzern.js am 02.10.2026 – nur teilweise (Elektromodelle VW/Audi/Škoda/Cupra, Porsche Cayenne Electric); offen geblieben: Plug-in-Hybride, Porsche Taycan/Macan/Hybride, Bentley, Lamborghini, ID.7, ID. Buzz.
 
-Nächste drei Dateien: renault-nissan-mitsubishi.js, hyundai-kia.js, toyota-lexus.js
+Nächste drei Dateien: geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js
+
+## 2026-10-10 – Monatslauf (Rotationsdateien: renault-nissan-mitsubishi.js, hyundai-kia.js, toyota-lexus.js)
+
+Im selben Zeitraum wie der Antriebsfilter-Eintrag unten; Teil A nur als Stichprobe zu den Rotationsmarken.
+
+### Teil A – Neuigkeiten
+
+- **Renault Megane E-Tech** (renault-nissan-mitsubishi.js): auf Modelljahr 2026 umgestellt – 67 kWh LFP, 160 kW, 300 Nm, bis 494 km WLTP, DC 165 kW, 15–80 % in ca. 24 min, 11 kW AC bidirektional (22 kW optional); Einstiegsversion EV40 entfällt, Alt-Variante EV60 (NMC, 468 km) ersetzt. Quellen: https://www.meinauto.de/news/2026/09/renault-megane-e-tech-erhaelt-update-neue-batterie-schnelleres-laden-und-mehr-reichweite , https://www.sparneuwagen.de/news/renault-bringt-neu-ueberarbeiteten-megane-e-tech-electric/
+- **Hyundai IONIQ 3**: Zellchemie 42 kWh LFP / 61 kWh NMC, DC 119 bzw. 110 kW, 10–80 % in ca. 30 min (61 kWh). Quellen: https://www.angurten.de/is/technische-daten/Hyundai-Ioniq+3-108+kW+-+42+kWh-0-kW-0-PS-2311-20334.html , https://www.heidelberg24.de/ratgeber/kleine-nummer-grosser-wurf-fahrbericht-hyundai-ioniq-zr-94529185.html
+- Hinweis zum IONIQ 3: Produktion in Izmit angelaufen. Quelle: https://www.elektroquatsch.de/artikel/hyundai-ioniq-3-produktion-tuerkei-izmit-oktober-2026
+
+### Teil B – Prüfung (jeweils Stichproben)
+
+- **Renault Twingo E-Tech**: AC-Ladeleistung 11 kW (vorher 6,6), Reichweite 262 km (Renault, vorher 263), Bruttokapazität 29 kWh, 10–80 % in ca. 30 min. Quellen: https://www.electrive.net/2026/01/06/renault-twingo-startet-in-deutschland-bei-21-590-euro/ , https://ev-database.org/de/pkw/3392/Renault-Twingo-E-Tech-275-kWh
+- **Dacia Spring Electric 70 (2026)**: Reichweite 221 km (vorher 225). Quelle: https://www.inside-digital.de/e-autos/dacia-spring-electric-100-2026 , https://www.nextpit.de/e-autos/dacia-spring-electric-70-2026
+- **Nissan Leaf 75 kWh**: Reichweite 624 km (Nissan-Korrektur, vorher 622). Quelle: https://insideevs.de/news/775435/nissan-leaf-daten-preise/
+- **Kia EV2 Long Range**: Drehmoment 250 Nm, 10–80 % in 30 min ergänzt. Quelle: https://ev-database.org/de/pkw/3491/Kia-EV2-61-kWh
+- **Toyota C-HR+**: Nettokapazitäten 54,0 / 72,0 kWh ergänzt. Quellen: https://ev-database.org/de/pkw/3393/Toyota-C-HRplus-577-kWh , https://insideevs.de/news/752424/toyota-chr-plus-elektroantrieb-daten/
+- **Toyota bZ4X Touring**: Nettokapazität 71 kWh, 269 Nm (FWD) ergänzt. Quelle: https://ev-database.org/de/pkw/3400/Toyota-bZ4X-Touring-FWD-747-kWh
+
+### Offene Punkte
+
+- Alle drei Dateien nur stichprobenartig geprüft; ungeprüft sind u. a. Renault 5/4/Scenic/Kangoo/Clio/Captur-Hybride, Alpine, Nissan Micra/Ariya/e-Power, Mitsubishi, Hyundai Inster/Kona/IONIQ 5/6/9/NEXO/Hybride, Kia EV3–EV9/PV5/Niro/Hybride, Genesis, Toyota Urban Cruiser/Mirai/Hybride/Proace, Lexus RZ/UX/NX/RX/LBX sowie alle Garantiebedingungen.
+- Widersprüchlich, daher nicht geändert: Kia EV2 61 kWh (61 kWh netto laut Bestand, ev-database 58 kWh nutzbar; Reichweite 448/453 km; DC 115/118 kW); Toyota C-HR+ 77 kWh Reichweite (600/607 km FWD, 525/505 km AWD); bZ4X Touring FWD (560 km Bestand vs. 591 km WLTP laut ev-database); Lexus ES (530 vs. 581 km, Batterie 77 brutto / 72 netto – Lexus-Preisliste war nicht lesbar); Dacia Spring AC-Ladeleistung (3,7 vs. 7 kW); Nissan Leaf Nettokapazität (52,9/75,1 kWh laut InsideEVs).
+- Angekündigt, nicht eingetragen: Dacia Spring Electric 80 (27,5 kWh, laut ev-database ab November 2026, Werte geschätzt); Hyundai-Neuheiten der Paris Motor Show (12.–18.10.2026).
+- Wie üblich Fachmedien statt Hersteller-Datenblättern als Hauptquelle (Hersteller-PDFs nicht lesbar).
 
 ## 2026-10-10 – Antriebsfilter und Referenzquellen
 

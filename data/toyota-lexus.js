@@ -28,13 +28,13 @@ EVDB.brand({
       ] },
     { name: "C-HR+", type: "BEV", seg: "Kompakt-SUV-Coupé", platform: "e-TNGA", since: 2025, arch: "400 V", notes: ETNGA, d: ED,
       variants: [
-        { name: "57,7 kWh FWD", gross: 57.7, range: 455, layout: "FWD", kw: 123, nm: 269 },
-        { name: "77 kWh FWD", gross: 77, range: 600, layout: "FWD", kw: 165, nm: 269 },
-        { name: "77 kWh AWD", gross: 77, range: 525, layout: "AWD", kw: 252 }
+        { name: "57,7 kWh FWD", net: 54, gross: 57.7, range: 455, layout: "FWD", kw: 123, nm: 269 },
+        { name: "77 kWh FWD", net: 72, gross: 77, range: 600, layout: "FWD", kw: 165, nm: 269 },
+        { name: "77 kWh AWD", net: 72, gross: 77, range: 525, layout: "AWD", kw: 252 }
       ] },
     { name: "bZ4X (Überarbeitung 2025)", type: "BEV", seg: "Mittelklasse-SUV", platform: "e-TNGA", since: 2022, arch: "400 V", notes: ETNGA, d: ED, variants: etnga },
     { name: "bZ4X Touring", type: "BEV", seg: "Mittelklasse-SUV (lang)", platform: "e-TNGA", since: 2026, arch: "400 V", notes: ETNGA, d: ED,
-      variants: [{ name: "74,7 kWh AWD", gross: 74.7, range: 528, layout: "AWD", kw: 280 }, { name: "74,7 kWh FWD", gross: 74.7, range: 560, layout: "FWD", kw: 165 }] },
+      variants: [{ name: "74,7 kWh AWD", net: 71, gross: 74.7, range: 528, layout: "AWD", kw: 280 }, { name: "74,7 kWh FWD", net: 71, gross: 74.7, range: 560, layout: "FWD", kw: 165, nm: 269 }] },
     { name: "Proace City / Proace Verso Electric", type: "BEV", seg: "Hochdachkombi / Van", platform: "EMP2 (Stellantis)", since: 2021, arch: "400 V", notes: "Baugleich mit den Stellantis-Vans.",
       variants: [{ name: "Proace City Verso 100 kW (52 kWh)", net: 50, gross: 52, chem: "NMC", range: 340, layout: "FWD", kw: 100, nm: 270, motor: "PSM", ac: 11, dc: 100 }] },
     { name: "Mirai", type: "FCEV", seg: "Obere Mittelklasse", platform: "GA-L", since: 2021, arch: "ca. 650 V (Batterie 310,8 V)",
