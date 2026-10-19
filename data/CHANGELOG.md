@@ -24,6 +24,13 @@ Zuletzt geprüft: renault-nissan-mitsubishi.js, hyundai-kia.js und toyota-lexus.
 
 Nächste drei Dateien: geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js
 
+## 2026-10-19 – Xpeng ergänzt (china-weitere.js, auf Zuruf)
+
+- **Xpeng G9L** neu (bestellbar seit 13.10.2026, Auslieferung ab Dezember): 110 kWh NCM (brutto), RWD 270 kW/591 km, AWD 430 kW/695 Nm/553 km, DC 540 kW, 800 V, V2L 6 kW. Quellen: https://ecomento.de/2026/10/13/xpeng-g9l-grosses-elektro-suv-startet-ab-74-600-euro-in-deutschland/ , https://www.goingelectric.de/2026/10/13/news/xpeng-g9l-7-sitzer-suv-mit-540-kw-ladeleistung-ab-74-600-e/
+- **Xpeng P7+**: drei Varianten ergänzt (SR 180 kW/455 km, LR 230 kW/530 km, AWD 370 kW/500 km; DC 350/446 kW; Europa-Start April 2026). Quellen: https://ecomento.de/2026/01/09/xpeng-stellt-elektroauto-limousine-p7-plus-fuer-europa-vor/ , https://insideevs.de/news/783870/xpeng-p7-elektrolimousine-daten-preise/ (Suchergebnis; Seite nicht abrufbar)
+- **Xpeng L03 (Mona)** als Modell angelegt (183 kW, LFP, ab 38.600 €). Quellen: https://www.elektroquatsch.de/elektroautos/xpeng-mona-l03 , https://www.elektroquatsch.de/kategorie/xpeng
+- Offen: G6 Standard Range (68,5 kWh/480 km im Bestand vs. 67,5–67,8 kWh/455 km laut ÖAMTC bzw. InsideEVs), P7+ Netto-/Brutto-Batterie, L03 Antriebsart/Batterie/Reichweite/Ladeleistung, G9L Plattform und Netto-Kapazität, Xpeng X9 (Europa-Termin), Mona L05 (Europa Anfang 2027 angekündigt), G7.
+
 ## 2026-10-10 – Monatslauf (Rotationsdateien: renault-nissan-mitsubishi.js, hyundai-kia.js, toyota-lexus.js)
 
 Im selben Zeitraum wie der Antriebsfilter-Eintrag unten; Teil A nur als Stichprobe zu den Rotationsmarken.

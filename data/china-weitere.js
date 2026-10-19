@@ -21,7 +21,24 @@ EVDB.brand({
         { name: "Long Range RWD (93,1 kWh)", net: 93.1, range: 585, layout: "RWD", kw: 258, nm: 465, dc: 525, t: 12 },
         { name: "AWD Performance (93,1 kWh)", net: 93.1, range: 540, layout: "AWD", kw: 423, nm: 695, dc: 525, t: 12 }
       ] },
-    { name: "P7+", type: "BEV", seg: "Obere Mittelklasse (Fastback)", platform: "SEPA 2.0", since: 2026, arch: "800 V", notes: "Europa-Start 2026, Montage für Europa bei Magna in Graz angekündigt.", variants: [] },
+    { name: "G9L", type: "BEV", seg: "Oberklasse-SUV (6/7-Sitzer)", since: 2026, arch: "800 V",
+      notes: "Seit 13.10.2026 in Deutschland bestellbar (ab 74.600 €), erste Auslieferungen Dezember 2026; Montage bei Magna in Graz. NCM-Batterie mit 110 kWh (brutto), Ladeleistung bis 540 kW, V2L bis 6 kW, Anhängelast 2 t. Verbrauch vorläufig 21,1–22,5 kWh/100 km, WLTP-Homologation noch offen.",
+      d: { chem: "NCM", gross: 110, dc: 540, t: 12 },
+      variants: [
+        { name: "RWD Long Range Ultra (7 Sitze)", range: 591, layout: "RWD", kw: 270 },
+        { name: "AWD Performance Ultra (6/7 Sitze)", range: 553, layout: "AWD", kw: 430, nm: 695 }
+      ] },
+    { name: "P7+", type: "BEV", seg: "Obere Mittelklasse (Fastback)", platform: "SEPA 2.0", since: 2026, arch: "800 V",
+      notes: "Europa-Start April 2026, Montage bei Magna in Graz. Netto-/Bruttowerte der Batterie laut InsideEVs (61,1/61,7 und 74,9/76,8 kWh), nicht einheitlich belegt.",
+      d: { chem: "LFP" },
+      variants: [
+        { name: "Standard Range RWD (61 kWh)", net: 61.1, gross: 61.7, range: 455, layout: "RWD", kw: 180, nm: 450, dc: 350 },
+        { name: "Long Range RWD (75 kWh)", net: 74.9, gross: 76.8, range: 530, layout: "RWD", kw: 230, nm: 450, dc: 446, t: 12 },
+        { name: "AWD Performance (75 kWh)", net: 74.9, gross: 76.8, range: 500, layout: "AWD", kw: 370, nm: 670, dc: 446, t: 12 }
+      ] },
+    { name: "L03 (Mona)", type: "BEV", seg: "Kompakt-SUV", since: 2026, arch: "400 V",
+      notes: "Preislich ab 38.600 € genannt, Europa-Markteinführung 2026 laut Fachmedien; Batterie, Reichweite und Ladewerte für Europa noch nicht belegt (Fachmedien nennen 520 km, uneinheitlich).",
+      variants: [{ name: "Base", chem: "LFP", kw: 183 }] },
     { name: "X9", type: "BEV", seg: "Großraum-Van", platform: "SEPA 2.0", since: 2026, status: "planned", arch: "800 V", notes: "7-Sitzer mit Hinterradlenkung; Europa-Einführung in einzelnen Märkten angekündigt.", variants: [] }
   ]
 });
