@@ -18,6 +18,8 @@ EVDB.brand({
       d: { motor: "PSM", motorMaker: "Tesla", ratio: "9 : 1", ac: 11 },
       variants: [
         { name: "Hinterradantrieb", net: 60, v: 340, chem: "LFP", cellMaker: "CATL / BYD", range: 500, layout: "RWD", kw: 220, dc: 175 },
+        { name: "Standard Hinterradantrieb (60 kWh)", net: 60, range: 534, cons: 13.1, layout: "RWD" },
+        { name: "Standard Long Range Hinterradantrieb (75 kWh)", net: 75, range: 657, cons: 12.7, layout: "RWD", kw: 220, dc: 250 },
         { name: "Long Range Hinterradantrieb", net: 75, v: 355, chem: "NMC", cellMaker: "LG Energy Solution", range: 622, layout: "RWD", kw: 250, dc: 250 },
         { name: "Long Range Allrad", net: 75, v: 355, chem: "NMC", cellMaker: "LG Energy Solution", range: 586, layout: "AWD", kw: 378, motor: "PSM + ASM", dc: 250, t: 27 },
         { name: "Performance", net: 79, chem: "NMC", cellMaker: "LG Energy Solution", range: 580, layout: "AWD", kw: 343, motor: "PSM + ASM", dc: 250 }

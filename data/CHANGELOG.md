@@ -22,8 +22,20 @@ Pro Monatslauf werden die nächsten drei Dateien dieser Liste gegen Herstellerqu
 
 Zuletzt geprüft: renault-nissan-mitsubishi.js, hyundai-kia.js und toyota-lexus.js am 10.10.2026 – jeweils nur teilweise (Stichproben der Neuheiten), Einzelheiten unter „Offene Punkte“ des Laufs. Davor: bmw-group.js, mercedes.js und stellantis.js am 02.10.2026 (Lauf 2) – jeweils nur teilweise. Davor: vw-konzern.js am 02.10.2026 – nur teilweise (Elektromodelle VW/Audi/Škoda/Cupra, Porsche Cayenne Electric); offen geblieben: Plug-in-Hybride, Porsche Taycan/Macan/Hybride, Bentley, Lamborghini, ID.7, ID. Buzz.
 
-Nächste drei Dateien: geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js
+Zuletzt geprüft (26.10.2026): geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js – nur oberflächlich, Wiederholung empfohlen.
 
+Nächste drei Dateien: byd-saic.js, china-weitere.js, sonstige-exoten.js
+
+## 2026-10-26 – Monatslauf (Rotationsdateien: geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js) – nur oberflächlich
+
+- **Tesla Model Y** (tesla-ford-usa.js): Varianten „Standard Hinterradantrieb“ (60 kWh, 534 km, 13,1 kWh/100 km) und „Standard Long Range Hinterradantrieb“ (75 kWh, 657 km, 12,7 kWh/100 km, 220 kW, DC 250 kW) ergänzt. Quelle: https://www.electrive.net/2026/01/09/sparversion-mit-657-km-reichweite-tesla-launcht-neue-model-y-variante/
+- **Polestar 5** (geely-gruppe.js): Antriebsart AWD bei beiden Varianten ergänzt (Dual Motor).
+
+### Offene Punkte
+
+- Die Rotationsdateien sind praktisch nicht geprüft; die Websuche lieferte kaum belastbare Herstellerdaten. Offen: gesamte Prüfung von geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js.
+- Widersprüchlich, nicht geändert: Model Y Standard 60 kWh DC 175 kW (evkx.net) vs. 250 kW (Tesla-Angabe laut Medien); Ford Mustang Mach-E MY26 laut Ford-AT-Datenblatt (https://www.ford.at/content/dam/guxeu/at/de_at/documents/technical-data/Technische_Daten_Ford_Mustang_Mach-E_MY26.00_zur_Preisliste_vom_16.01.2026_s.pdf, PDF nicht lesbar) 470/615/555/515 km vs. Bestand 470/600/–/515; Model 3 Standard nicht gefunden.
+- Neuheiten-Hinweise nicht eingetragen: BMW iX5 (Bestellstart Oktober), Smart #2 (35,8 kWh, 290 km), Ford Transit City, Li Auto Li 6 (Europa-Start auf Anfang 2027 verschoben), Honda 0 Series (Europa wohl 2027).
 ## 2026-10-19 – Xpeng ergänzt (china-weitere.js, auf Zuruf)
 
 - **Xpeng G9L** neu (bestellbar seit 13.10.2026, Auslieferung ab Dezember): 110 kWh NCM (brutto), RWD 270 kW/591 km, AWD 430 kW/695 Nm/553 km, DC 540 kW, 800 V, V2L 6 kW. Quellen: https://ecomento.de/2026/10/13/xpeng-g9l-grosses-elektro-suv-startet-ab-74-600-euro-in-deutschland/ , https://www.goingelectric.de/2026/10/13/news/xpeng-g9l-7-sitzer-suv-mit-540-kw-ladeleistung-ab-74-600-e/

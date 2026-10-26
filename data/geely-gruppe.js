@@ -81,7 +81,7 @@ EVDB.brand({
     { name: "Polestar 5", type: "BEV", seg: "Gran Turismo (4-Türer)", platform: "PPA (geklebte Aluminiumstruktur)", since: 2025, arch: "800 V",
       notes: "Eigene Plattform mit geklebtem Aluminium-Chassis, selbst entwickelte Heck-PSM, Zellen von SK On.",
       d: { net: 106, gross: 112, chem: "NMC", cellMaker: "SK On", layout: "AWD", motor: "PSM", ac: 11, dc: 350, t: 22 },
-      variants: [{ name: "Dual Motor", range: 670, kw: 550, nm: 812 }, { name: "Performance", range: 565, kw: 650, nm: 1015 }] }
+      variants: [{ name: "Dual Motor", range: 670, layout: "AWD", kw: 550, nm: 812 }, { name: "Performance", range: 565, layout: "AWD", kw: 650, nm: 1015 }] }
   ]
 });
 
