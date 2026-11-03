@@ -10,7 +10,7 @@ EVDB.brand({
       notes: "800-V-SiC-Plattform, Cell-to-Body, Heck als Gigacasting. Seit Überarbeitung 2025 durchgehend LFP-Batterien mit 5C-Laderate.",
       d: { chem: "LFP", pack: "Cell-to-Body", motor: "PSM", ac: 11 },
       variants: [
-        { name: "Standard Range RWD (68,5 kWh)", net: 68.5, range: 480, layout: "RWD", kw: 185, nm: 440, dc: 382 },
+        { name: "Standard Range RWD (68,5 kWh)", net: 67.8, gross: 68.5, range: 480, layout: "RWD", kw: 185, nm: 440, dc: 382 },
         { name: "Long Range RWD (80,8 kWh)", net: 80.8, range: 525, layout: "RWD", kw: 218, nm: 440, dc: 451, t: 12 },
         { name: "AWD Performance (80,8 kWh)", net: 80.8, range: 510, layout: "AWD", kw: 358, nm: 660, dc: 451, t: 12 }
       ] },

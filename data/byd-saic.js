@@ -22,8 +22,13 @@ EVDB.brand({
       variants: [{ name: "Active / Boost (45,1 kWh)", net: 45.1, range: 312, kw: 130, nm: 290, dc: 65 }, { name: "Comfort (64,8 kWh)", net: 64.8, range: 420, kw: 150, nm: 310, dc: 155 }] },
     { name: "Atto 2 DM-i", type: "PHEV", seg: "Kleinwagen-SUV", since: 2026, arch: "400 V", hybrid: DMI, d: Object.assign({}, BDM, { layout: "FWD", ice: "1.5 Vierzylinder-Sauger (Atkinson), 72 kW" }),
       variants: [{ name: "Active (7,8 kWh)", gross: 7.8, range: 40, sysKw: 122, ac: 3.3 }, { name: "Boost (18 kWh)", gross: 18, range: 90, sysKw: 156, ac: 6.6 }] },
-    { name: "Atto 3", type: "BEV", seg: "Kompakt-SUV", platform: "e-Platform 3.0", since: 2022, arch: "400 V", notes: E3 + " Nachfolger „Atto 3 Evo“ mit Heckantrieb und höherer Systemspannung für 2026 angekündigt.",
-      variants: [Object.assign({ name: "Atto 3 (60,5 kWh)", net: 60.5, v: 403, range: 420, layout: "FWD", kw: 150, nm: 310, dc: 88, t: 29 }, BD)] },
+    { name: "Atto 3", type: "BEV", seg: "Kompakt-SUV", platform: "e-Platform 3.0", since: 2022, arch: "400 V", notes: E3 + " Seit April 2026 ersetzt der Atto 3 Evo (Modelljahr 2026) das Modell (Atto 3 MY25 laut ev-database seit Februar 2026 nicht mehr erhältlich).",
+      variants: [Object.assign({ name: "Atto 3 (60,5 kWh)", net: 60.5, gross: 62, v: 403, range: 420, layout: "FWD", kw: 150, nm: 310, dc: 110, t: 36 }, BD)] },
+    { name: "Atto 3 Evo", type: "BEV", seg: "Kompakt-SUV", platform: "e-Platform 3.0", since: 2026, arch: "400 V", notes: E3 + " Modelljahr 2026 mit größerer Batterie, Heckantrieb bzw. Allrad, V2L bis 3,3 kW.", d: Object.assign({}, BD, { net: 74.8, gross: 76, dc: 220, t: 25 }),
+      variants: [
+        { name: "RWD Design", range: 510, layout: "RWD", kw: 230, nm: 380 },
+        { name: "AWD Excellence", range: 470, layout: "AWD", kw: 330, nm: 560 }
+      ] },
     { name: "Seal", type: "BEV", seg: "Mittelklasse-Limousine", platform: "e-Platform 3.0", since: 2023, arch: "550 V", notes: E3 + " Erstes Modell mit Cell-to-Body; Allrad mit ASM vorn.",
       d: Object.assign({}, BD, { pack: "Cell-to-Body" }),
       variants: [

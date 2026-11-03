@@ -24,7 +24,23 @@ Zuletzt geprüft: renault-nissan-mitsubishi.js, hyundai-kia.js und toyota-lexus.
 
 Zuletzt geprüft (26.10.2026): geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js – nur oberflächlich, Wiederholung empfohlen.
 
-Nächste drei Dateien: byd-saic.js, china-weitere.js, sonstige-exoten.js
+Zuletzt geprüft (03.11.2026): byd-saic.js und china-weitere.js – nur Stichproben (BYD Atto 3/Atto 2 DM-i, Xpeng G6); sonstige-exoten.js nicht geprüft.
+
+Nächste drei Dateien: sonstige-exoten.js, vw-konzern.js, bmw-group.js (byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+
+## 2026-11-03 – Monatslauf (Rotationsdateien: byd-saic.js, china-weitere.js) – nur oberflächlich
+
+- **BYD Atto 3 Evo** (byd-saic.js) neu: 74,8 kWh netto / 76 kWh brutto LFP, 400 V, DC 220 kW, 10–80 % in ca. 25 min, AC 11 kW; RWD Design 230 kW/380 Nm/510 km, AWD Excellence 330 kW/560 Nm/470 km. Quellen: https://ev-database.org/de/pkw/3474/BYD-ATTO-3-Evo-RWD-Design , https://ev-database.org/de/pkw/3475/BYD-ATTO-3-Evo-AWD-Excellence
+- **BYD Atto 3** (byd-saic.js): Bruttokapazität 62 kWh, DC 110 kW, 10–80 % in 36 min (vorher 88 kW/29 min), Hinweis: seit Februar 2026 durch Evo ersetzt. Quelle: https://ev-database.org/de/pkw/3192/BYD-ATTO-3
+- **Xpeng G6 Standard Range** (china-weitere.js): Netto 67,8 / Brutto 68,5 kWh. Quelle: https://www.fiches-auto.fr/fiches-techniques/electriques/f-671-xpeng-g6-standard-range-ph2-251-ch-69-kwh.php , https://insideevs.de/news/765526/xpeng-g6-g9-2025-preise/
+- **BYD Atto 2 DM-i**: Daten (7,8/18 kWh, 40/90 km) bestätigt, keine Änderung. Quelle: https://de.motor1.com/news/784880/byd-neuheiten-2026-ueberblick/
+
+### Offene Punkte
+
+- Gesamte Prüfung von byd-saic.js (Seal, Sealion 7, Denza, MG, Maxus) und china-weitere.js (außer G6) offen; sonstige-exoten.js nicht geprüft. Websuche lieferte kaum Herstellerdaten.
+- Widersprüchlich, nicht geändert: Xpeng G6 SR Reichweite (455/470/480 km).
+- Nicht eingetragen: BYD Dolphin G PHEV (Ende 2026, keine Daten), Xiaomi (bereits als planned; Europa-Start 2027), VW ID. Polo GTI/ID. Cross, Smart #2.
+- Syntaxprüfung nur per Klammerzählung (Node nicht installiert, Browser-Preview reagierte nicht).
 
 ## 2026-10-26 – Monatslauf (Rotationsdateien: geely-gruppe.js, tesla-ford-usa.js, japan-weitere.js) – nur oberflächlich
 
