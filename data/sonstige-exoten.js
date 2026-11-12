@@ -93,9 +93,9 @@ EVDB.brand({
     { name: "F80", type: "HEV", seg: "Hypersportwagen (limitiert)", since: 2025, arch: "800 V",
       hybrid: "Axle-Split + P2 ohne Stecker: zwei E-Maschinen vorn, MGU-K am V6; zusätzlich 48-V-E-Turbolader",
       variants: [{ name: "F80", gross: 2.28, v: 860, chem: "NMC", layout: "AWD", motor: "PSM", motorMaker: "Ferrari (Eigenentwicklung)", ice: "3.0 V6 Biturbo mit E-Turbos, 662 kW", sysKw: 883, gearbox: "8-Gang-DKG" }] },
-    { name: "Elettrica", type: "BEV", seg: "Sportwagen (viertürig)", since: 2026, status: "planned", arch: "800 V",
-      notes: "Erster vollelektrischer Ferrari: vier selbst entwickelte PSM (je Rad eine), Batterie in Maranello montiert und in den Unterboden integriert, Zellen von SK On. Technikdaten laut Vorstellung im Oktober 2025; Marktstart 2026.",
-      variants: [{ name: "Elettrica (Vorabangaben)", gross: 122, chem: "NMC", cellMaker: "SK On", range: 530, layout: "AWD", kw: 830, motor: "PSM", motorMaker: "Ferrari – vorn 2 × 105 kW (30.000/min), hinten 2 × 310 kW (25.500/min)", rpm: 30000, dc: 350 }] }
+    { name: "Luce (ehem. Elettrica)", type: "BEV", seg: "Sportwagen (viertürig)", since: 2026, arch: "800 V",
+      notes: "Erster vollelektrischer Ferrari (vorgestellt am 25.05.2026, bestellbar seit Mai 2026, ab 550.000 €; erste Auslieferungen laut Medien ab Q4 2026): vier selbst entwickelte PSM (je Rad eine), Batterie in Maranello montiert und in den Unterboden integriert, 210 Pouch-Zellen in Reihe, Zellen von SK On. Garantie auf Antrieb, Batterie und Ladesystem laut Medien 8 Jahre ohne km-Begrenzung.",
+      variants: [{ name: "Luce", net: 115, gross: 122, chem: "NMC", cellMaker: "SK On", pack: "210 Pouch-Zellen in Reihe (210s1p)", range: 530, cons: 21.7, layout: "AWD", kw: 772, nm: 990, motor: "PSM", motorMaker: "Ferrari – vorn 2 × 105 kW (30.000/min), hinten 2 × 310 kW (25.500/min)", rpm: 30000, ac: 22, dc: 350, t: 23 }] }
   ]
 });
 

@@ -26,7 +26,21 @@ Zuletzt geprüft (26.10.2026): geely-gruppe.js, tesla-ford-usa.js, japan-weitere
 
 Zuletzt geprüft (03.11.2026): byd-saic.js und china-weitere.js – nur Stichproben (BYD Atto 3/Atto 2 DM-i, Xpeng G6); sonstige-exoten.js nicht geprüft.
 
-Nächste drei Dateien: sonstige-exoten.js, vw-konzern.js, bmw-group.js (byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+Zuletzt geprüft (12.11.2026): sonstige-exoten.js (nur Ferrari, VinFast-Stichprobe) und bmw-group.js (nur iX5) – nur oberflächlich; vw-konzern.js nur Stichprobe ID. Polo/ID. Cross (ohne Änderung).
+
+Nächste drei Dateien: vw-konzern.js, bmw-group.js, mercedes.js (sonstige-exoten.js sowie byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+
+## 2026-11-12 – Monatslauf (Rotationsdateien: sonstige-exoten.js, vw-konzern.js, bmw-group.js) – nur oberflächlich
+
+- **Ferrari Luce** (ehem. „Elettrica“, sonstige-exoten.js): auf Serienstand umgestellt, Status „planned“ entfernt (bestellbar seit Mai 2026, ab 550.000 €). Netto 115 kWh / brutto 122 kWh, 210 Pouch-Zellen NMC (210s1p), 530 km WLTP, 217 Wh/km, 772 kW (vorher Vorabangabe 830 kW) / 990 Nm, AC 22 kW, DC 350 kW, 10–80 % in 23 min. Quellen: https://ev-database.org/de/pkw/3643/Ferrari-Luce , https://vision-mobility.de/elektroauto/oberklasse/ferrari-luce-voll-elektrisch-550000-euro-reichweite-580-km-1050-ps-bestellbar-391784.html , https://ecomento.de/2026/05/26/ferrari-luce-das-erste-elektroauto-der-italiener/
+- **BMW iX5 (G65)** (bmw-group.js): Status „planned“ entfernt, jetzt bestellbar (102.800 €), Auslieferung ab Anfang 2027, Produktion Spartanburg. Technikwerte bestätigt (141 kWh netto, DC 460 kW, 10–80 % in ca. 23 min, AC 22 kW). Quelle: https://insideevs.de/news/790765/bmw-ix5-60xdrive-daten-preise/
+- **VW ID. Polo / ID. Cross**: Bestand bereits aktuell, keine Änderung.
+
+### Offene Punkte
+
+- Widersprüchlich, nicht geändert: Ferrari Luce Nettokapazität (115 kWh laut ev-database, andere Quellen 117 kWh; Ferrari offiziell nicht genannt), Einzelleistungen der Motoren (Summe 830 kW) gegen Gesamtleistung 772 kW; BMW iX5 DC-Ladeleistung 460 kW (GoingElectric, InsideEVs) vs. 425 kW (Elektroquatsch).
+- VinFast VF 6/VF 7: Websuche ohne belastbare neue Herstellerdaten; Ladeleistung VF 6 unklar (ca. 100 kW laut evkx.net), nicht eingetragen.
+- Nicht geprüft: Jaguar/Land Rover, KGM, Togg, McLaren, Aston Martin, Bugatti/Rimac sowie der Großteil von vw-konzern.js (Plug-in-Hybride, Porsche, Bentley, Lamborghini) und bmw-group.js (außer iX5).
 
 ## 2026-11-03 – Monatslauf (Rotationsdateien: byd-saic.js, china-weitere.js) – nur oberflächlich
 
