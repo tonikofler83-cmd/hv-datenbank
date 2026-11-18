@@ -28,7 +28,22 @@ Zuletzt geprüft (03.11.2026): byd-saic.js und china-weitere.js – nur Stichpro
 
 Zuletzt geprüft (12.11.2026): sonstige-exoten.js (nur Ferrari, VinFast-Stichprobe) und bmw-group.js (nur iX5) – nur oberflächlich; vw-konzern.js nur Stichprobe ID. Polo/ID. Cross (ohne Änderung).
 
-Nächste drei Dateien: vw-konzern.js, bmw-group.js, mercedes.js (sonstige-exoten.js sowie byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+Zuletzt geprüft (18.11.2026): mercedes.js (nur GLA, GLB, G 580), bmw-group.js (nur X5 50e) und vw-konzern.js (nur ID. Cross) – nur oberflächlich.
+
+Nächste drei Dateien: stellantis.js, renault-nissan-mitsubishi.js, hyundai-kia.js (vw-konzern.js, bmw-group.js, mercedes.js, sonstige-exoten.js sowie byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+
+## 2026-11-18 – Monatslauf (Rotationsdateien: mercedes.js, bmw-group.js, vw-konzern.js) – nur oberflächlich
+
+- **Mercedes GLA mit EQ Technologie** (mercedes.js) neu: GLA 200 (58 kWh LFP, 165 kW, DC 200 kW), GLA 250+ (85 kWh NMC, 200 kW, 657 km, DC 320 kW, 10–80 % ca. 22 min), GLA 350 4MATIC (85 kWh, 260 kW, DC 320 kW); AC 11 kW (22 kW optional); 71-kWh-Variante folgt Anfang 2027. Quellen: https://insideevs.de/news/802941/mercedes-gla-elektrisch-daten-preise/ , https://www.electrive.net/2026/07/29/weltpremiere-des-mercedes-gla-bis-zu-320-kw-ladeleistung-und-657-kilometer-reichweite/ , https://ecomento.de/2026/07/30/mercedes-gla-elektrisch-startet-bei-48-599-60-euro/
+- **Mercedes GLB** (mercedes.js): Varianten GLB 200 (58 kWh LFP, 430 km, DC 200 kW) und GLB 250 (71 kWh, 527 km, 200 kW, DC 250 kW) ergänzt. Quelle: https://insideevs.de/news/781085/mercedes-glb-eq-daten-preise/
+- **Mercedes G 580** (mercedes.js): Modelljahr 2026: 117 kWh netto (vorher 116), 479 km (473), DC 210 kW (200), 10–80 % in 29 min (32). Quelle: https://insideevs.de/news/791366/mercedes-g-klasse-eq-batterienderungen/
+- **VW ID. Cross**: Bestand bestätigt, keine Änderung. Quelle: https://www.electrive.net/2026/07/23/vw-id-cross-startet-zunaechst-ab-34-025-euro/
+
+### Offene Punkte
+
+- BMW X5 50e/M60e (G65): Status „planned“ unverändert; Quellen widersprüchlich zu Bestellstart (ADAC: ab 01/27, Preis 102.800 € laut Medien). Bruttokapazität (29,48 vs. ADAC-Angabe) nicht abgeglichen. Quelle: https://de.motor1.com/news/800055/bmw-x5-2026-motoren-preise-marktstart/
+- Widersprüchlich, nicht eingetragen: GLA 200 Reichweite (445/447 km), GLA 350 (641–643 km), ID. Cross 37 kWh (316 km vs. Herstellerangabe 324 km), EQB 350 DC-Leistung (100 vs. 112 kW); EQA/EQB-Batterietausch (Rückruf, Farasis 70,5 kWh).
+- Nicht geprüft: Großteil von mercedes.js (EQE, EQS, Plug-in-Hybride, AMG), bmw-group.js (außer X5), vw-konzern.js (außer ID. Cross); Syntaxprüfung nur per Klammerzählung (Node nicht installiert).
 
 ## 2026-11-12 – Monatslauf (Rotationsdateien: sonstige-exoten.js, vw-konzern.js, bmw-group.js) – nur oberflächlich
 
