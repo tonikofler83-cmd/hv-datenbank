@@ -19,8 +19,8 @@ const phev = (name, range, net) => ({ name, net: net || 17.9, chem: "NMC", range
 EVDB.brand({ id: "peugeot", name: "Peugeot", country: "Frankreich", group: "Stellantis", warranty: W, models: [
   { name: "E-208 / E-208 GTi", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2019, arch: "400 V", notes: ECMP + " E-208 GTi (ab September 2026) mit mechanischem Sperrdifferenzial. Nachfolger auf STLA Small angekündigt (Produktionsstart Ende 2026).", variants: [ecmp50("100 kW (50 kWh)", 362), ecmp("115 kW (54 kWh)", 410), ecmpHot("GTi 207 kW", 374)] },
   { name: "E-2008", type: "BEV", seg: "Kleinwagen-SUV", platform: "e-CMP", since: 2020, arch: "400 V", notes: ECMP, variants: [ecmp("115 kW (54 kWh)", 406)] },
-  { name: "E-308 / E-308 SW", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", notes: "Seit dem Facelift (Modelljahr 2026) 58,3 statt 51 kWh nutzbar, Vehicle-to-Load.",
-    variants: [{ name: "115 kW (58 kWh)", net: 58.3, chem: "NMC", range: 450, layout: "FWD", kw: 115, nm: 270, motor: "PSM", ac: 11, dc: 100 }] },
+  { name: "E-308 / E-308 SW", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", notes: "Seit dem Facelift (Modelljahr 2026) Batterie mit 58 kWh brutto (55,4 statt 50,8 kWh nutzbar), Vehicle-to-Load.",
+    variants: [{ name: "115 kW (58 kWh)", net: 55.4, gross: 58.3, chem: "NMC", range: 450, layout: "FWD", kw: 115, nm: 270, motor: "PSM", ac: 11, dc: 100 }] },
   { name: "E-408", type: "BEV", seg: "Mittelklasse-Fastback", platform: "EMP2 V3", since: 2024, arch: "400 V",
     variants: [{ name: "157 kW (58 kWh)", net: 58.2, chem: "NMC", range: 453, layout: "FWD", kw: 157, nm: 345, motor: "PSM", ac: 11, dc: 120 }] },
   { name: "E-3008 / E-5008", type: "BEV", seg: "Kompakt-SUV / 7-Sitzer", platform: "STLA Medium", since: 2024, arch: "400 V", notes: MEDIUM,
@@ -38,7 +38,7 @@ EVDB.brand({ id: "citroen", name: "Citroën", country: "Frankreich", group: "Ste
   { name: "ë-C3 Aircross", type: "BEV", seg: "Kleinwagen-SUV", platform: "Smart Car", since: 2024, arch: "400 V", notes: SMALL,
     variants: [smart("Standard Range (44 kWh)", 303), { name: "Extended Range (54 kWh)", net: 54, chem: "LFP", range: 400, layout: "FWD", kw: 83, motor: "PSM", ac: 7.4, dc: 100 }] },
   { name: "ë-C4 / ë-C4 X", type: "BEV", seg: "Kompaktklasse", platform: "e-CMP", since: 2020, arch: "400 V", notes: ECMP, variants: [ecmp50("100 kW (50 kWh)", 355), ecmp("115 kW (54 kWh)", 415)] },
-  { name: "ë-C5 Aircross", type: "BEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2025, arch: "400 V", notes: MEDIUM, variants: [med73("157 kW (73 kWh)", 520), med97("Long Range 170 kW (97 kWh)", 680)] },
+  { name: "ë-C5 Aircross", type: "BEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2025, arch: "400 V", notes: MEDIUM, variants: [med73("157 kW (73 kWh)", 520), Object.assign(med97("Long Range 170 kW (97 kWh)", 679), { gross: 104 })] },
   { name: "C5 Aircross Plug-in-Hybrid", type: "PHEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2025, arch: "400 V", hybrid: PHEV_NEW, variants: [phev("Plug-in-Hybrid 195", 86, 21)] },
   { name: "ë-Berlingo / ë-SpaceTourer", type: "BEV", seg: "Hochdachkombi / Van", platform: "EMP2", since: 2021, arch: "400 V",
     variants: [{ name: "ë-Berlingo 100 kW (52 kWh)", net: 50, gross: 52, chem: "NMC", range: 343, layout: "FWD", kw: 100, nm: 270, motor: "PSM", ac: 11, dc: 100 }] }
@@ -62,8 +62,8 @@ EVDB.brand({ id: "ds", name: "DS Automobiles", country: "Frankreich", group: "St
 EVDB.brand({ id: "opel", name: "Opel", country: "Deutschland", group: "Stellantis", warranty: W, models: [
   { name: "Corsa Electric / Corsa GSE", type: "BEV", seg: "Kleinwagen", platform: "e-CMP", since: 2019, arch: "400 V", notes: ECMP + " Corsa GSE seit September 2026 bestellbar.", variants: [ecmp50("100 kW (50 kWh)", 357), ecmp("115 kW (54 kWh)", 405), ecmpHot("GSE 207 kW", 374)] },
   { name: "Mokka Electric / Mokka GSE", type: "BEV", seg: "Kleinwagen-SUV", platform: "e-CMP", since: 2020, arch: "400 V", notes: ECMP, variants: [ecmp("115 kW (54 kWh)", 403), ecmpHot("GSE 207 kW", 336)] },
-  { name: "Astra Electric / Sports Tourer Electric", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", notes: "Seit dem Facelift 2026 Batterie mit 58 statt 54 kWh, Vehicle-to-Load.",
-    variants: [{ name: "115 kW (58 kWh)", chem: "NMC", range: 454, cons: 15.3, layout: "FWD", kw: 115, motor: "PSM", ac: 11, dc: 100, t: 32 }] },
+  { name: "Astra Electric / Sports Tourer Electric", type: "BEV", seg: "Kompaktklasse", platform: "EMP2 V3", since: 2023, arch: "400 V", notes: "Seit dem Facelift 2026 Batterie mit 58 statt 54 kWh brutto (rund 55 kWh nutzbar), Vehicle-to-Load. DC 20–80 % in ca. 32 min.",
+    variants: [{ name: "115 kW (58 kWh)", net: 55.4, gross: 58.4, v: 377, chem: "NMC", range: 454, cons: 15.3, layout: "FWD", kw: 115, nm: 270, motor: "PSM", ac: 11, dc: 100 }] },
   { name: "Frontera Electric", type: "BEV", seg: "Kleinwagen-SUV", platform: "Smart Car", since: 2024, arch: "400 V", notes: SMALL,
     variants: [smart("83 kW (44 kWh)", 305), { name: "Extended Range (54 kWh)", net: 54, chem: "LFP", range: 408, layout: "FWD", kw: 83, motor: "PSM", ac: 7.4, dc: 100 }] },
   { name: "Grandland Electric", type: "BEV", seg: "Kompakt-SUV", platform: "STLA Medium", since: 2024, arch: "400 V", notes: MEDIUM + " Gebaut in Eisenach.",
@@ -155,6 +155,6 @@ EVDB.brand({ id: "leapmotor", name: "Leapmotor", country: "China", group: "Leapm
     variants: [{ name: "Pro (56,2 kWh)", net: 56.2, range: 401 }, { name: "ProMax (67,1 kWh)", net: 67.1, range: 482 }] },
   { name: "B03X", type: "BEV", seg: "Kleinwagen-SUV", since: 2026, arch: "400 V", notes: "Seit 01.07.2026 bestellbar. Batterie als tragendes Strukturteil („Cell-to-Chassis 2.0 Plus“). DC-Laden 30–80 % in 16 bzw. 17 min.",
     d: { chem: "LFP", pack: "Cell-to-Chassis", layout: "FWD", ac: 11 },
-    variants: [{ name: "Life (39,8 kWh)", range: 292 }, { name: "Design (53,0 kWh)", range: 382, kw: 145, dc: 133 }] }
+    variants: [{ name: "Life (39,8 kWh)", net: 39, gross: 39.8, range: 292, kw: 130 }, { name: "Design (53,0 kWh)", range: 382, kw: 145, dc: 133 }] }
 ] });
 })();

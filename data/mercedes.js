@@ -56,7 +56,7 @@ EVDB.brand({
         { name: "EQA 300 4MATIC", net: 66.5, v: 367, range: 459, layout: "AWD", kw: 168, nm: 390, motor: "ASM + PSM" },
         { name: "EQB 350 4MATIC", net: 66.5, v: 367, range: 447, layout: "AWD", kw: 215, nm: 520, motor: "ASM + PSM" }
       ] },
-    { name: "EQE (Limousine / SUV)", type: "BEV", seg: "Obere Mittelklasse", platform: "EVA2", since: 2022, arch: "400 V", notes: EVA,
+    { name: "EQE (Limousine / SUV)", type: "BEV", seg: "Obere Mittelklasse", platform: "EVA2", since: 2022, arch: "400 V", notes: EVA + " Seit November 2026 in Deutschland nicht mehr frei konfigurierbar (nur noch Bestandsfahrzeuge); ein offizielles Produktionsende ist nicht genannt, als Nachfolger der Limousine gilt eine elektrische E-Klasse (erwartet 2027).",
       d: { chem: "NMC 811", cellMaker: "CATL", motor: "PSM", ac: 11, dc: 170, t: 32 },
       variants: [
         { name: "EQE 350+", net: 96, range: 690, layout: "RWD", kw: 215, nm: 565 },
@@ -72,7 +72,7 @@ EVDB.brand({
         { name: "EQS 500 4MATIC", range: 869, layout: "AWD", kw: 350 },
         { name: "EQS 580 4MATIC", layout: "AWD", kw: 430 }
       ] },
-    { name: "EQS SUV", type: "BEV", seg: "Luxus-SUV", platform: "EVA2", since: 2022, arch: "400 V", notes: EVA + " Batterie 12 Module, ca. 396 V Nennspannung.",
+    { name: "EQS SUV", type: "BEV", seg: "Luxus-SUV", platform: "EVA2", since: 2022, arch: "400 V", notes: EVA + " Batterie 12 Module, ca. 396 V Nennspannung. Seit November 2026 in Deutschland nicht mehr frei konfigurierbar (nur noch Bestandsfahrzeuge).",
       d: { net: 118, v: 396, chem: "NMC 811", cellMaker: "CATL", motor: "PSM", ac: 11, dc: 200, t: 31 },
       variants: [
         { name: "EQS SUV 450+", layout: "RWD", kw: 265, nm: 568 },

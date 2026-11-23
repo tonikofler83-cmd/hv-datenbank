@@ -25,9 +25,10 @@ EVDB.brand({
     { name: "Megane E-Tech (Modelljahr 2026)", type: "BEV", seg: "Kompaktklasse", platform: "AmpR Medium", since: 2022, arch: "400 V",
       notes: AMPR_M + " Modelljahr 2026 mit LFP-Batterie (67 kWh); Einstiegsversion mit 40 kWh entfallen. Serienmäßig 11 kW bidirektionaler AC-Lader, Wärmepumpe und Batterievorkonditionierung, 22 kW AC optional. Ladezeit laut Renault 15–80 % in rund 24 min.",
       variants: [{ name: "EV67 160 kW", net: 67, v: 400, chem: "LFP", range: 494, layout: "FWD", kw: 160, nm: 300, motor: "EESM", motorMaker: "Renault (Cléon)", ac: 11, dc: 165 }] },
-    { name: "Scenic E-Tech", type: "BEV", seg: "Kompakt-SUV", platform: "AmpR Medium", since: 2024, arch: "400 V", notes: AMPR_M,
-      d: { chem: "NMC", cellMaker: "LG Energy Solution", layout: "FWD", motor: "EESM", motorMaker: "Renault (Cléon)", ac: 22 },
-      variants: [{ name: "Comfort Range 125 kW (60 kWh)", net: 60, range: 430, kw: 125, nm: 280, dc: 130 }, { name: "Long Range 160 kW (87 kWh)", net: 87, range: 625, kw: 160, nm: 300, dc: 150, t: 37 }] },
+    { name: "Scenic E-Tech (Modellpflege 2026)", type: "BEV", seg: "Kompakt-SUV", platform: "AmpR Medium", since: 2024, arch: "400 V",
+      notes: AMPR_M + " Modellpflege (seit September 2026 bestellbar, 67-kWh-Version folgt später): neue Batterien – 67 kWh LFP (Cell-to-Pack, wie Megane) oder 89 kWh NMC; Batteriemontage in Douai, Zellen aus Polen. Bidirektionale AC-Lader 11/22 kW. DC 15–80 %: 24 min (67 kWh) bzw. 28 min (89 kWh). WLTP-Reichweite 89 kWh je nach Quelle 632–642 km. Vorgängervarianten 60/87 kWh entfallen.",
+      d: { layout: "FWD", kw: 160, motor: "EESM", motorMaker: "Renault (Cléon)", ac: 11 },
+      variants: [{ name: "Comfort Range 160 kW (67 kWh)", net: 67, chem: "LFP", pack: "Cell-to-Pack", range: 467, dc: 165 }, { name: "Long Range 160 kW (89 kWh)", net: 89, chem: "NMC", dc: 150 }] },
     { name: "Kangoo E-Tech", type: "BEV", seg: "Hochdachkombi", platform: "CMF-CD", since: 2022, arch: "400 V",
       variants: [{ name: "EV45 90 kW", net: 45, chem: "NMC", range: 285, layout: "FWD", kw: 90, nm: 245, motor: "EESM", ac: 22, dc: 80 }] },
     { name: "Renault 5 Turbo 3E", type: "BEV", seg: "Sportwagen (Kleinserie)", since: 2027, status: "planned", arch: "800 V", notes: "Auf 1.980 Stück limitiert: Carbon-Karosserie, zwei Radnabenmotoren an der Hinterachse, 800 V.",
@@ -45,7 +46,9 @@ EVDB.brand({
   id: "dacia", name: "Dacia", country: "Rumänien", group: "Renault Group",
   warranty: { vehicle: "3 Jahre / 100.000 km (Dacia Zen bis 7 Jahre / 150.000 km bei Wartung im Netz)", hv: "8 Jahre / 120.000 km (Spring)", rust: "6 Jahre" },
   models: [
-    { name: "Spring", type: "BEV", seg: "Kleinstwagen", platform: "CMF-A", since: 2021, arch: "400 V", notes: "Gebaut in China (Dongfeng). Modelljahr 2026 mit LFP-Batterie und stärkeren Motoren.",
+    { name: "Spring (2. Generation)", type: "BEV", seg: "Kleinstwagen", platform: "AmpR Small (RG-EV, wie Twingo)", since: 2026, arch: "400 V", notes: "Seit September 2026 bestellbar (ab 17.900 €), erste Auslieferungen Ende 2026; gebaut in Slowenien statt China. Serienmäßig 6,6 kW AC; Power-Paket mit 11 kW AC, 50 kW DC und V2L. Verbrauch 12,7 kWh/100 km.",
+      variants: [{ name: "Electric 80 (27,5 kWh)", net: 27.5, gross: 29, chem: "LFP", range: 250, cons: 12.7, layout: "FWD", kw: 60, nm: 175, ac: 6.6, dc: 50, t: 30 }] },
+    { name: "Spring (1. Generation)", type: "BEV", seg: "Kleinstwagen", platform: "CMF-A", since: 2021, arch: "400 V", notes: "Gebaut in China (Dongfeng). Modelljahr 2026 mit LFP-Batterie und stärkeren Motoren. Wird durch die 2. Generation abgelöst.",
       d: { layout: "FWD", motor: "PSM", ac: 7 },
       variants: [
         { name: "Electric 70 (2026)", net: 24.3, chem: "LFP", range: 221, kw: 52, dc: 40 },
@@ -75,6 +78,8 @@ EVDB.brand({
   id: "nissan", name: "Nissan", country: "Japan", group: "Renault-Nissan-Mitsubishi-Allianz",
   warranty: { vehicle: "3 Jahre / 100.000 km", hv: "8 Jahre / 160.000 km (Kapazitätsgarantie)", drive: "5 Jahre / 100.000 km auf EV-Komponenten" },
   models: [
+    { name: "Pixo", type: "BEV", seg: "Kleinstwagen", platform: "AmpR Small (RG-EV, wie Renault Twingo)", since: 2027, arch: "400 V", notes: "Technikbruder des Renault Twingo E-Tech, erstes Nissan-Elektroauto mit LFP-Batterie. Bestellbar seit 03.11.2026 (ab 19.990 €), Auslieferung ab Anfang 2027. DC 15–80 % in 28 min laut Nissan; Höchstgeschwindigkeit 130 km/h.",
+      variants: [{ name: "60 kW (27,5 kWh)", net: 27.5, gross: 29, chem: "LFP", range: 259, cons: 12.4, layout: "FWD", kw: 60, nm: 175, ac: 11, dc: 50 }] },
     { name: "Micra (6. Generation)", type: "BEV", seg: "Kleinwagen", platform: "AmpR Small", since: 2025, arch: "400 V", notes: "Technikbruder des Renault 5, gebaut in Douai.",
       d: { chem: "NMC", cellMaker: "AESC", layout: "FWD", motor: "EESM", motorMaker: "Renault (Cléon)", ac: 11 },
       variants: [{ name: "90 kW (40 kWh)", net: 40, range: 317, kw: 90, nm: 225, dc: 80 }, { name: "110 kW (52 kWh)", net: 52, range: 416, kw: 110, nm: 245, dc: 100 }] },

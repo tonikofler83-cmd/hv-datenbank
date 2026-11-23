@@ -30,7 +30,33 @@ Zuletzt geprüft (12.11.2026): sonstige-exoten.js (nur Ferrari, VinFast-Stichpro
 
 Zuletzt geprüft (18.11.2026): mercedes.js (nur GLA, GLB, G 580), bmw-group.js (nur X5 50e) und vw-konzern.js (nur ID. Cross) – nur oberflächlich.
 
-Nächste drei Dateien: stellantis.js, renault-nissan-mitsubishi.js, hyundai-kia.js (vw-konzern.js, bmw-group.js, mercedes.js, sonstige-exoten.js sowie byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+Zuletzt geprüft (23.11.2026): stellantis.js (nur Peugeot E-308, Citroën ë-C5 Aircross, Opel Astra, Leapmotor B03X) und renault-nissan-mitsubishi.js (nur Scenic, Dacia Spring, Nissan Pixo) – nur teilweise; hyundai-kia.js nicht geprüft.
+
+Nächste drei Dateien: hyundai-kia.js, toyota-lexus.js, geely-gruppe.js (stellantis.js und renault-nissan-mitsubishi.js sowie vw-konzern.js, bmw-group.js, mercedes.js, sonstige-exoten.js, byd-saic.js und china-weitere.js bei Gelegenheit gründlicher wiederholen)
+
+## 2026-11-23 – Monatslauf (Rotationsdateien: stellantis.js, renault-nissan-mitsubishi.js, hyundai-kia.js) – nur teilweise
+
+### Teil A – Neuigkeiten
+
+- **Nissan Pixo** (renault-nissan-mitsubishi.js) neu: Twingo-Technikbruder, bestellbar seit 03.11.2026 (ab 19.990 €), Auslieferung ab Anfang 2027; 27,5 kWh netto / 29 kWh brutto LFP, 60 kW, 175 Nm, Frontantrieb, 259 km WLTP, 12,4 kWh/100 km, AC 11 kW, DC 50 kW (15–80 % in 28 min). Quellen: https://www.electrive.net/2026/11/03/bestellstart-fuer-den-nissan-pixo-einstiegsversion-ab-19-990-euro/ , https://www.elektroauto-news.net/news/nissan-pixo-bestellbar-preis-reichweite , https://ev-database.org/de/pkw/3784/Nissan-Pixo-275-kWh
+- **Dacia Spring (2. Generation)** (renault-nissan-mitsubishi.js) neu: bestellbar seit September 2026 (ab 17.900 €), gebaut in Slowenien, Plattform RG-EV/AmpR Small; Electric 80 mit 27,5 kWh netto / 29 kWh brutto LFP, 60 kW, 175 Nm, FWD, 250 km WLTP, 12,7 kWh/100 km, AC 6,6 kW (11 kW optional), DC 50 kW optional, 10–80 % in 30 min. Bisheriges Modell als „1. Generation“ gekennzeichnet (noch nicht entfernt). Quellen: https://www.electrive.net/2026/09/16/neuer-dacia-spring-bleibt-auch-mit-dc-ladeoption-unter-20-000-euro/ , https://ev-database.org/de/pkw/3729/Dacia-Spring-Electric-80
+- **Renault Scenic E-Tech (Modellpflege 2026)** (renault-nissan-mitsubishi.js): Varianten 60/87 kWh ersetzt durch 67 kWh LFP (Cell-to-Pack, 467 km WLTP, DC 165 kW) und 89 kWh NMC (DC 150 kW), jeweils 160 kW; DC 15–80 % in 24 bzw. 28 min (im Hinweistext). Quellen: https://www.electrive.net/2026/09/22/facelifts-von-renault-megane-und-scenic-nun-bestellbar/ , https://ecomento.de/?p=135750
+- **Mercedes EQE / EQE SUV / EQS SUV** (mercedes.js): Hinweis ergänzt, dass sie seit November 2026 in Deutschland nicht mehr frei konfigurierbar sind; nicht entfernt, da kein offizielles Produktionsende. Quelle: https://ecomento.de/?p=138172
+
+### Teil B – Prüfung (Stichproben)
+
+- **Citroën ë-C5 Aircross Long Range** (stellantis.js): WLTP 679 km (vorher 680), Bruttokapazität 104 kWh ergänzt. Quellen: https://www.electrive.net/2026/07/07/citroen-verpasst-c5-aircross-electric-grosse-batterie-fuer-679-km-reichweite/ , https://www.elektroquatsch.de/artikel/citroen-c5-aircross-elektro-679-km-97-kwh-bestellbar
+- **Opel Astra Electric (2026)** (stellantis.js): netto 55,4 / brutto 58,4 kWh, 377 V, 270 Nm ergänzt; Ladezeit 32 min entfernt (war 20–80 %, nicht 10–80 %; jetzt im Hinweis). Quellen: https://ev-database.org/de/pkw/3450/Opel-Astra-Electric-58-kWh , https://insideevs.de/news/780113/opel-astra-electric-2026-facelift/ , https://www.media.stellantis.com/de-de/opel/press/frei-nach-wahl-neuer-opel-astra-als-batterie-elektrischer-astra-electric-plug-in-hybrid-hybrid-oder-effizienter-diesel
+- **Peugeot E-308 (MY26)** (stellantis.js): Nettokapazität 55,4 kWh (vorher 58,3 = Bruttowert), brutto 58,3 kWh. Quellen: https://ev-database.org/de/pkw/3321/Peugeot-e-308-58-kWh , https://www.auto-data.net/en/peugeot-308-iii-phase-ii-2025-e-308-58.3-kwh-156hp-electric-55211
+- **Leapmotor B03X Life** (stellantis.js): 130 kW, netto 39,0 / brutto 39,8 kWh ergänzt. Quellen: https://ev-database.org/de/pkw/3665/Leapmotor-B03X-398-kWh , https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/leapmotor/b03x/1generation/351747/
+
+### Offene Punkte
+
+- hyundai-kia.js nicht geprüft; stellantis.js und renault-nissan-mitsubishi.js nur stichprobenartig (offen u. a. Peugeot E-208/E-2008, DS, Fiat, Jeep, Maserati, Leapmotor C10/B10; Renault 5/4/Kangoo, Alpine, Nissan Ariya/e-Power, Mitsubishi, alle Garantien).
+- Widersprüchlich, nicht eingetragen: Scenic 89 kWh WLTP (632 km laut electrive vs. 642 km laut Renault/ecomento) und Motorleistung (160 vs. 162 kW, eingetragen 160 kW wie Megane); Leapmotor B03X Life DC-Leistung (133 kW nur eine Quelle); Peugeot E-408 und DS N°4 Nettokapazität 58,2/58,3 kWh vermutlich ebenfalls Bruttowerte – nicht geändert, da nicht einzeln belegt.
+- Zu prüfen: ob Dacia Spring 1. Generation noch bestellbar ist (dann entfernen); Leapmotor B10 67,1 kWh laut ev-database seit Oktober 2026 ausgelaufen (Nachfolgevariante MY27?); Mercedes EQE/EQS SUV bei offiziellem Produktionsende entfernen.
+- Neuheiten außerhalb der Rotation nicht eingetragen: Smart #2 (Vorbestellung seit 13.10.2026), VW ID. Tiguan (MY2027), Volvo EX40 neue Varianten, Tesla Model 3/Y RWD 60 kWh (seit August 2026), Audi A2 e-tron, Hyundai Staria Elektro.
+- Syntaxprüfung: Node nicht installiert; App im lokalen Browser-Preview (python -m http.server) ohne Konsolenfehler geladen, 71 Marken, Datenstand 2026-11-23.
 
 ## 2026-11-18 – Monatslauf (Rotationsdateien: mercedes.js, bmw-group.js, vw-konzern.js) – nur oberflächlich
 
